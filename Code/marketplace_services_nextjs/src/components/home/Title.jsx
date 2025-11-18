@@ -1,3 +1,18 @@
 export default function Title() {
-  return <h1>Bem-vindo à Nossa Página Inicial</h1>;
+  return <nav className = "menu">
+    <img src="#" alt="Logo" />
+
+    <ul className = "menu-list">
+      <li>Quero Prestar Serviços</li>
+      <li>Categoria de Serviços</li>
+      <li>Para Empresas/Manutenções</li>
+      <li>Ajuda</li>
+    </ul>
+
+    <div className = "menu-actions">
+      <a href="#">criar conta</a>
+      <button>Entrar</button>
+    </div>
+
+  </nav>;
 }
