@@ -1,6 +1,6 @@
 export default function Title() {
   return <nav className = "menu">
-    <img src="#" alt="Logo" />
+    <img className = "imagem-logo" src="/logo/logo-azul.png" alt="Logo" />
 
     <ul className = "menu-list">
       <li>Quero Prestar Serviços</li>
