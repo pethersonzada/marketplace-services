@@ -75,7 +75,7 @@
   gap: 20px;
   align-items: center;
   justify-content: center;
-  font-family: "Poppins-SemiBold";
+  font-family: "Poppins-Regular";
   color: white;
 }
 
@@ -132,8 +132,8 @@
   color: black;
   height: 30px;
   width: 300px;
-  border-radius: 5px;
-  border: solid #1F87E4 1px;
+  border-radius: 10px;
+  border: solid #1F87E4 3px;
 }
 
 .input-area {
@@ -141,4 +141,33 @@
   display: flex;
   align-items: center;
   gap: 8px;  
+}
+
+.footer {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 250px;
+  background-color: #1F87E4;
+}
+
+.footer-redes-sociais {
+  width: 150px;
+}
+
+.menu-list-footer {
+  font-family: "Poppins-Light";
+  font-size: 15px;
+  color: white;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.footer-rights {
+  font-size: 10px;
+  font-family: "Poppins-Light";
+  color: white;
 }

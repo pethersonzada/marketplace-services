@@ -1,6 +1,7 @@
-import Title from "@/components/home/Title";
+import Title from "@/components/ui/Title";
 import Banner from "@/components/home/Banner";
 import Main from "@/components/home/Main";
+import Footer from "@/components/ui/Footer";
 
 export default function HomePage() {
   return (
@@ -10,6 +11,8 @@ export default function HomePage() {
       <Banner />
 
       <Main />
+
+      <Footer />
 
     </div>
   );
