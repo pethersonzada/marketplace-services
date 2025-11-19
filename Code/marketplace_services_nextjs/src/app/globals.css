@@ -1,8 +1,45 @@
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("/fonts/Poppins-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins-Thin";
+  src: url("/fonts/Poppins-Thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("/fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 .menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 15px;
+  font-family: "Poppins-Light";
 }
 
 .menu-list {
@@ -12,10 +49,96 @@
 }
 
 .menu-actions {
+  align-items: center;
   display: flex;
   gap: 15px;
 }
 
+.create-account {
+  text-decoration: none;
+  color: #1F87E4;
+}
+
+.create-account a:visited {
+  text-decoration: none;
+  color: #1F87E4;
+}
+
+
 .imagem-logo {
     height: 100;
+}
+
+.coupon-card {
+  background-color: #1F87E4;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-SemiBold";
+  color: white;
+}
+
+.all-buttons {
+  all: unset;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #1F87E4 ;
+  color: white;
+  font-family: "Poppins-Light";
+  height: 40px;
+  width: 65px;
+}
+
+.banner-discount-content {
+  display: flex;
+  align-items: center;
+
+}
+
+.arrow-down {
+  margin-top: 7px;
+}
+
+.main-content * {
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-title {
+  margin-top: 30px;
+  font-family: "Poppins-Light";
+}
+
+.subtitle {
+  font-family: "Poppins-Thin";
+}
+
+.main-input {
+  margin-right: 5px;
+  font-family: "Poppins-Regular";
+  color: black;
+  height: 30px;
+  width: 300px;
+  border-radius: 5px;
+  border: solid #1F87E4 1px;
+}
+
+.input-area {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;  
 }

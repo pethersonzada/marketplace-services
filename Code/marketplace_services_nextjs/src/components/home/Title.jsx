@@ -10,8 +10,8 @@ export default function Title() {
     </ul>
 
     <div className = "menu-actions">
-      <a href="#">criar conta</a>
-      <button>Entrar</button>
+      <a className="create-account" href="#">criar conta</a>
+      <button className = "all-buttons">Entrar</button>
     </div>
 
   </nav>;
