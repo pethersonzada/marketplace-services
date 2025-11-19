@@ -14,7 +14,8 @@ Permitir que clientes encontrem e contratem serviços variados de forma simples,
 
 ## Link para o Projeto:
 
-Link Encurtado - https://bit.ly/4nF7iHu
+Link Encurtado (Figma) - https://bit.ly/4nF7iHu
+Link do Site (Vercel) - https://marketplace-services-zeta.vercel.app/home
 
 ## Requisitos do Sistema
 
