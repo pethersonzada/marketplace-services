@@ -111,6 +111,8 @@
 }
 
 .main-content {
+  margin-top: 50px;
+  margin-bottom: 80px;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -230,6 +232,7 @@
 }
 
 .how-it-works-container {
+  margin-top: 30px ;
   font-family: "Poppins-Regular";
   justify-content: center;
   align-items: center;
@@ -239,4 +242,72 @@
 
 .how-it-works-container img {
   width: 900px;
+}
+
+.profile-card {
+  width: 400px;
+  height: 300px;             
+  background-color: #1F87E4;
+  border-radius: 30px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;         
+  font-family: "Poppins-Regular";
+  color: white;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.left-side img {
+  width: 150px;
+}
+
+.left-side-func {
+  margin-top: -15px;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-block {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.info-block:last-child {
+  border-bottom: none;
+}
+
+.number {
+  margin-top: 1px;
+  font-size: 30px;
+}
+
+.number-39 {
+  margin-top: 20px;
+  font-size: 26px;
+}
+
+.label {
+  font-size: 16px;
+  margin-top: -30px;
+}
+
+.profile-card-container {
+  gap: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
