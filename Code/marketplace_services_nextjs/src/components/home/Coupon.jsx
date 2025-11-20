@@ -1,4 +1,4 @@
-    export default function Banner() {
+    export default function Coupon() {
         return <div className = "coupon-card">
             <img className = "discount" src="/icons/desconto.png" alt="Discount" />
 

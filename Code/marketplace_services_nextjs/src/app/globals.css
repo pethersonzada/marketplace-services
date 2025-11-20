@@ -71,6 +71,7 @@
 
 .coupon-card {
   background-color: #1F87E4;
+  height: 80px;
   display: flex;
   gap: 20px;
   align-items: center;
@@ -170,4 +171,72 @@
   font-size: 10px;
   font-family: "Poppins-Light";
   color: white;
+}
+
+.services-card {
+  font-size: 23px;
+  font-family: "Poppins-Regular";
+  color: white;
+  border: none;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  width: 450px;
+  background-color: #1F87E4;
+}
+
+.services-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.options-button {
+  all: unset;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+  border: solid white 2px;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #1F87E4 ;
+  color: white;
+  font-family: "Poppins-Light";
+  height: 40px;
+  width: 140px;
+}
+
+.arrow {
+  width: 25px;
+}
+
+.services-card-img {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  width: 150px;
+}
+
+.services {
+  margin: 50px;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.how-it-works-container {
+  font-family: "Poppins-Regular";
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.how-it-works-container img {
+  width: 900px;
 }
