@@ -24,7 +24,7 @@ export default function Account() {
                         <input 
                         type="text"
                         className = "main-input"
-                        placeholder="Digite o seu emai"
+                        placeholder="Digite o seu Email"
                         />
 
                     </div>
@@ -35,7 +35,7 @@ export default function Account() {
                         <input 
                         type="text"
                         className = "main-input"
-                        placeholder="Digite a sua senha"
+                        placeholder="Digite a sua Senha"
                         />
                         <p className = "forgot-password">Esqueci a minha senha</p>
 
@@ -50,7 +50,7 @@ export default function Account() {
 
                     <div className = "login-alternative">
 
-                        <h3>Ou entre com</h3>
+                        <p>Ou entre com</p>
 
                         <img src="/logo/redes-sociais-coloridas.png" alt="" />
 

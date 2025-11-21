@@ -10,17 +10,16 @@ export default function Main() {
         </div>
 
         <div className = "input-area" >
+            
             <input 
             type = "text"
-            className = "main-input"
-            placeholder = "    Qual problema você quer resolver hoje?"
+            className = "home-search-input"
+            placeholder = "Qual o problema a ser resolvido?"
             />
 
-            <button className = "all-buttons">Buscar</button>
+           <button className = "all-buttons">Buscar</button>
 
         </div>
-
-
 
     </div>;
 }
