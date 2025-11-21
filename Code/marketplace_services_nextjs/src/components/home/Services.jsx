@@ -9,7 +9,7 @@ export default function Services() {
 
             <button className = "options-button">
                 Ver Opções
-                <img className = "arrow" src="/icons/keyboard_arrow_down.png" alt="Arrow Down" />   
+                <img className = "arrow" src="/icons/keyboard_arrow_left.png" alt="Arrow Down" />   
             </button>
 
             </div>
@@ -18,7 +18,7 @@ export default function Services() {
 
         </div>
 
-<div className = "services-card">
+        <div className = "services-card">
 
             <div className = "services-card-content">
 
@@ -26,7 +26,7 @@ export default function Services() {
 
             <button className = "options-button">
                 Ver Opções
-                <img className = "arrow" src="/icons/keyboard_arrow_down.png" alt="Arrow Down" />   
+                <img className = "arrow" src="/icons/keyboard_arrow_left.png" alt="Arrow Down" />   
             </button>
 
             </div>
@@ -35,7 +35,7 @@ export default function Services() {
 
         </div>
 
-<div className = "services-card">
+        <div className = "services-card">
 
             <div className = "services-card-content">
 
@@ -43,7 +43,7 @@ export default function Services() {
 
             <button className = "options-button">
                 Ver Opções
-                <img className = "arrow" src="/icons/keyboard_arrow_down.png" alt="Arrow Down" />   
+                <img className = "arrow" src="/icons/keyboard_arrow_left.png" alt="Arrow Down" />   
             </button>
 
             </div>
