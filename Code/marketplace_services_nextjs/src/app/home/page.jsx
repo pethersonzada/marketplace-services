@@ -11,18 +11,18 @@ export default function HomePage() {
       <Title />
 
       <Coupon />
-      
+
       <Main />
-      
+
       <Services />
-      
-      <div className = "how-it-works-container">
+
+      <div className="how-it-works-container">
         <h2>Como Funciona?</h2>
         <img src="/banner/how-it-works.png" alt="" />
       </div>
 
       <Avatar />
-      
+
       <Footer />
     </div>
   );

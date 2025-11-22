@@ -2,9 +2,9 @@ import "../../styles/account.css";
 
 export default function Account() {
     return (
-        <div className = "account-both-sides">
+        <div className="account-both-sides">
             <div className="account-left-side">
-                
+
                 <div className="greeting-top">
                     <h1>Olá, </h1>
                     <img className="login-logo" src="/logo/logo-branca.png" alt="Logo" />
@@ -16,41 +16,41 @@ export default function Account() {
 
             <div className="account-right-side">
 
-                <div className = "login-content">
+                <div className="login-content">
 
                     <h1>Entre ou Cadastre-se</h1>
 
                     <h4>Email</h4>
-                    <div className = "email-login">
+                    <div className="email-login">
 
-                        <input 
-                        type="text"
-                        className = "main-input"
-                        placeholder="Digite o seu Email"
+                        <input
+                            type="text"
+                            className="main-input"
+                            placeholder="Digite o seu Email"
                         />
 
                     </div>
 
-                    <div className = "password-login">
+                    <div className="password-login">
 
                         <h4>Senha</h4>
-                        <input 
-                        type="text"
-                        className = "main-input"
-                        placeholder="Digite a sua Senha"
+                        <input
+                            type="text"
+                            className="main-input"
+                            placeholder="Digite a sua Senha"
                         />
-                        <p className = "forgot-password">Esqueci a minha senha</p>
+                        <p className="forgot-password">Esqueci a minha senha</p>
 
-                        <div className = "campos-login">
+                        <div className="campos-login">
 
-                            <button className = "all-buttons">Entrar</button>
-                            <p className = "login-create-account">Criar minha conta</p>
+                            <button className="all-buttons">Entrar</button>
+                            <p className="login-create-account">Criar minha conta</p>
 
                         </div>
 
                     </div>
 
-                    <div className = "login-alternative">
+                    <div className="login-alternative">
 
                         <p>Ou entre com</p>
 
@@ -58,7 +58,7 @@ export default function Account() {
 
                     </div>
 
-                    <footer className = "login-footer">
+                    <footer className="login-footer">
                         <p>Termos de serviço | Ajuda | Encontrei um erro</p>
                     </footer>
 
