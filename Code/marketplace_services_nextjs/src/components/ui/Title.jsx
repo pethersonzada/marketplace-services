@@ -1,3 +1,5 @@
+import "../../styles/menu.css";
+
 export default function Title() {
   return <nav className = "menu">
     <img className = "imagem-logo" src="/logo/logo-azul.png" alt="Logo" />

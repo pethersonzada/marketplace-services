@@ -1,3 +1,5 @@
+import "../../styles/footer.css";
+
 export default function Footer() {
     return <footer className = "footer">
         <img className = "imagem-logo" src="/logo/logo-branca.png" alt="" />

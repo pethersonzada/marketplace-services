@@ -1,0 +1,19 @@
+.coupon-card {
+  background-color: #1F87E4;
+  height: 80px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Poppins-Regular";
+}
+
+.banner-discount-content {
+  display: flex;
+  align-items: center;
+}
+
+.arrow-down {
+  margin-top: 7px;
+}

@@ -1,0 +1,79 @@
+.how-it-works-container {
+  margin-top: 30px;
+  font-family: "Poppins-Regular";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-card-container {
+  gap: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card {
+  width: 400px;
+  height: 300px;
+  background-color: #1F87E4;
+  border-radius: 30px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-family: "Poppins-Regular";
+  color: white;
+}
+
+/* Lado Esquerdo */
+.profile-card-left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-card-left-side img {
+  width: 150px;
+}
+
+.profile-card-left-side-func {
+  margin-top: -15px;
+}
+
+/* Lado Direito */
+.profile-card-right-side {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Blocos de informação */
+.info-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.info-block:last-child {
+  border-bottom: none;
+}
+
+.profile-card-number {
+  margin-top: 1px;
+  font-size: 30px;
+}
+
+.profile-card-number-39 {
+  margin-top: 20px;
+  font-size: 26px;
+}
+
+.profile-card-label {
+  font-size: 16px;
+  margin-top: -30px;
+}

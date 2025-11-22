@@ -1,3 +1,5 @@
+import "../../styles/home.css";
+
 export default function Main() {
     return <div className = "main-content" >
 

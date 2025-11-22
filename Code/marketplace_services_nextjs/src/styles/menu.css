@@ -1,0 +1,28 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  font-family: "Poppins-Light";
+}
+
+.menu-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu-actions {
+  align-items: center;
+  display: flex;
+  gap: 15px;
+}
+
+.create-account {
+  text-decoration: none;
+  color: #1F87E4;
+}
+
+.imagem-logo {
+  height: 100px;
+}

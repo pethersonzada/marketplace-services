@@ -1,0 +1,40 @@
+.main-content {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+.main-title {
+  margin-top: 30px;
+  font-family: "Poppins-Light";
+}
+
+.subtitle {
+  font-family: "Poppins-Thin";
+}
+
+.home-search-input {
+  width: 300px;
+  height: 40px; 
+  border-radius: 10px;
+  border: 3px solid #1F87E4; 
+  font-family: "Poppins-Light";
+  padding: 0 15px;
+  outline: none;
+}
+
+.input-area {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}

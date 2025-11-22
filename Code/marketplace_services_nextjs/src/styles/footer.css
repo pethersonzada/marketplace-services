@@ -1,0 +1,27 @@
+.footer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 250px;
+  background-color: #1F87E4;
+}
+
+.footer-redes-sociais {
+  width: 150px;
+}
+
+.menu-list-footer {
+  font-family: "Poppins-Light";
+  font-size: 15px;
+  color: white;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.footer-rights {
+  font-size: 10px;
+  font-family: "Poppins-Light";
+  color: white;
+}

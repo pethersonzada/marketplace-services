@@ -1,3 +1,5 @@
+import "../../styles/account.css";
+
 export default function Account() {
     return (
         <div className = "account-both-sides">

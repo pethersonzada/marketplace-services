@@ -1,0 +1,114 @@
+.account-both-sides {
+  height: 100vh;
+  display: flex;
+}
+
+/* ESQUERDA */
+
+.account-left-side {
+  color: white;
+  background-color: #1F87E4;
+  width: 50%;
+  font-family: "Poppins-Bold";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.greeting-top {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: -10px;
+}
+
+.login-logo {
+  height: 150px;
+  object-fit: contain;
+}
+
+.account-left-side h1 {
+  margin: 0;
+  font-size: 60px;
+}
+
+/* DIREITA */
+
+.account-right-side {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-content {
+  margin-top: 30px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-content h1 {
+  text-align: center;
+  font-family: "Poppins-Regular";
+  color: black;
+}
+
+.login-content h4 {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-family: "Poppins-Light";
+}
+
+.main-input {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  padding: 0 15px;
+  border: 2px solid #1F87E4;
+  border-radius: 10px;
+  font-family: "Poppins-Regular";
+  font-size: 14px;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.forgot-password {
+  margin-top: -10px;
+  font-family: "Poppins-Light";
+  font-size: 12px;
+  display: flex;
+  justify-content: right;
+}
+
+.campos-login {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-create-account {
+  font-family: "Poppins-Light";
+  font-size: 12px;
+}
+
+.login-alternative {
+  margin: 20px;
+  color: black;
+  font-size: 15px;
+  font-family: "Poppins-Light";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-footer {
+  margin-top: 20px;
+  font-size: 13px;
+  font-family: "Poppins-Light";
+  display: flex;
+  justify-content: center;
+}
