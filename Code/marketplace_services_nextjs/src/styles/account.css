@@ -37,7 +37,7 @@
 
 .account-right-side {
   width: 50%;
-  height: 100vh;
+  height: 97.5vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,7 +106,7 @@
 }
 
 .login-footer {
-  margin-top: 20px;
+  margin-top: 15px;
   font-size: 13px;
   font-family: "Poppins-Light";
   display: flex;
