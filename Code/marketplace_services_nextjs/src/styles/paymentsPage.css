@@ -1,0 +1,16 @@
+
+.left_right {
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+
+.left {
+    width:50%;
+}
+
+.right{
+    width: 50%; 
+}
