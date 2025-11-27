@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+.caixa-resumo_de_pedido{
+    background-color:white;
+    padding: 50px;
+    width: 100%;
+    min-height: 100vh;
+    max-width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    font-family: 'poppins',sans-serif;
+}
+.titulo{
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+.linha_divisoria{
+    border: none;
+    border-top: 3px solid #e5e7eb;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.foto{
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+
+}
+.produto{
+    margin-bottom: 30px;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+.detalhes{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.linha-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.descricao_qtd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nome_servico {
+    font-size: 16px;
+    margin: 0;
+}
+
+.preco {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.descricao {
+    font-size: 13px;
+    color: #a5a6a9;
+    font-weight: 300;
+    margin: 0;
+}
+
+.qtd {
+    font-size: 13px;
+    color: #a5a6a9;
+}
+.cupom{
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#cupom{
+    width: 70%;
+    padding: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: 1 solid #a5a6a9;
+    
+}
+#cupom:focus{
+    border-width: 2px;
+}
+.aplicar{
+    background-color: #a5a6a9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+.aplicar:hover{
+    background-color: #34a0ff;
+}
+.resumo{
+    margin-top: 30px;
+}
+.subtotal_valor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20;
+    
+}
+.subtotal{
+    font-weight: bold;
+    margin: 0;
+}
+.valor{
+    font-weight: bold;
+    margin: 0;
+}
+.deslocamento{
+    font-weight: bold;
+    margin: 0;
+}
+.valor_d{
+    font-weight: bold;
+    margin: 0;
+}
+.total_preco{
+   margin-top: 30px; 
+}
+.total{
+    font-weight: bold;
+    font-size: 20;
+
+}
+.preco_t{
+    font-size: 35px;
+    color: black;
+    font-weight: 500;
+}
+.taxa_preco{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #a5a6a9;
+    font-size: 12px;
+    margin-top: -80px;
+    align-items: baseline;
+
+}
+

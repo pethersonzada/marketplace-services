@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+.caixa-forma_de_pagamento{
+    background-color: #f5f5f5;
+    padding: 50px;
+    width: 100%;
+    min-height: 100vh;
+    max-width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    font-family: 'poppins',sans-serif; 
+}
+.titulo{
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+.linha-divisoria{
+    border: none;
+    border-top: 3px solid #e5e7eb;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.subtitulo {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.container-opcoes {
+  display: flex;    
+  gap: 20px;        
+  margin-bottom: 30px; 
+}
+
+.opcao {
+  display: flex;
+  align-items: center; 
+  gap: 8px;         
+  cursor: pointer;     
+  font-size: 14px;
+  color: #000000;
+}
+.dadosCartao{
+    font-size: 20px;
+    margin-bottom: 30px;
+    
+}
+
+#numeroDeCartao{
+    width: 100%;
+    height: 15px;
+    padding: 10px;
+    font-weight: normal;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #b3b3b3;
+}
+.venci_cvv{
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    width: 100%;
+    
+}
+.grupo_venci_cvv{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+.subsubtitulo{
+    font-size: 15px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 10px;
+}
+#validade{
+    width: 50%;
+    height: 10px;
+    padding: 7px;
+    font-weight: normal;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #b3b3b3;
+}
+#cvv{
+    width: 50%;
+    height: 10px;
+    padding: 7px;
+    font-weight: normal;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #b3b3b3;
+}
+#nomeTitular{
+    width: 100%;
+    height: 15px;
+    padding: 10px;
+    font-weight: normal;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #b3b3b3;
+}
+#email{
+    width: 100%;
+    height: 15px;
+    padding: 10px;
+    font-weight: normal;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #b3b3b3;
+
+}
+.cpf_data{
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    width: 100%;
+    
+}
+.grupo_cpf_data{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+#cpf{
+    width: 50%;
+    height: 10px;
+    padding: 10px;
+    font-weight: normal;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #b3b3b3;
+
+}
+#dataNascimento{
+    width: 50%;
+    height: 10px;
+    padding: 10;
+    font-weight: normal;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #b3b3b3;
+}
+.salvar_container{
+    margin-top: 20px;
+}
+.checkbox_label{
+    display: flex;
+    align-items: center;
+    gap: 2px;            
+    cursor:pointer;      
+    font-size: 12px;
+    width: fit-content;
+}
+.checkbox_label input[type="checkbox"] {
+    margin: 0; 
+    width: 12px;
+    height: 12px;
+    accent-color:#34a0ff;
+}
+.botao_pagar, 
+.botao_cancelar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 15px;
+    font-weight: normal;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    box-sizing: border-box;
+    line-height: normal;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.botao_pagar {
+    background-color: #34a0ff;
+}
+
+.botao_pagar:hover {
+    background-color: #2bbd07;
+}
+
+.botao_cancelar {
+    background-color: #fa1e1e;
+}
+
+.botao_cancelar:hover {
+    background-color: #c51f1f;
+}
+.texto_privacidade{
+    font-size: 12px;
+    color:#b3b3b3;       
+    margin-top: 20px;      
+    line-height: 1.5;
+    text-align: justify;
+}
+#numeroDeCartao:focus,
+#validade:focus,
+#cvv:focus,
+#nomeTitular:focus,
+#email:focus,
+#dataNascimento{
+    outline: none;
+    border-width: 2px;
+}
+input::placeholder{
+    color: #b3b3b3;
+    opacity: 1;
+}
+.boleto{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.lista_boleto{
+    margin-top: 15px;
+    padding-left: 20px; 
+    text-align: left;
+}
+.lista_boleto li {
+    font-size: 15px;
+    margin-bottom: 10px;
+    list-style-type: disc; 
+}
+.lista_boleto li::marker {
+    color: #34a0ff;
+    font-size: 18px;
+}
+.lista_pix{
+    margin-top: 15px;
+    padding-left: 20px; 
+    text-align: left;
+}
+.lista_pix li {
+    font-size: 15px;
+    margin-bottom: 10px;
+    list-style-type: disc; 
+}
+.lista_pix li::marker {
+    color: #34a0ff;
+    font-size: 18px;
+}
