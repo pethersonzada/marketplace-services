@@ -16,11 +16,12 @@ export default function Title() {
       <div className="menu-actions">
         <a className="create-account" href="#">criar conta</a>
 
-        <Link href="/">
+        <Link href="/login">
           <button className="all-buttons">
             Entrar
           </button>
         </Link>
+        
       </div>
     </nav>
   );

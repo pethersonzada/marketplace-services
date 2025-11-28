@@ -1,4 +1,5 @@
 import "../../styles/coupon-banner.css";
+import Link from "next/link"
 
 export default function Coupon() {
     return (

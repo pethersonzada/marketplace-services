@@ -8,6 +8,7 @@ import Avatar from "@/components/ui/Avatar";
 export default function HomePage() {
   return (
     <div>
+      
       <Title />
 
       <Coupon />
@@ -24,6 +25,7 @@ export default function HomePage() {
       <Avatar />
 
       <Footer />
+
     </div>
   );
 }
