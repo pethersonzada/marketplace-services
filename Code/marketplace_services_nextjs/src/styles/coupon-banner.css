@@ -2,12 +2,15 @@
   background-color: #1F87E4;
   height: 80px;
   display: flex;
-  gap: 20px;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
+  gap: 20px;
   color: white;
   font-family: "Poppins-Regular";
+  width: 100%;   
+  max-width: 100vw;     
 }
+
 
 .banner-discount-content {
   display: flex;
