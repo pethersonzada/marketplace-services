@@ -1,5 +1,6 @@
 import '@/styles/orderSummary.css';
 import Image from 'next/image';
+
 export default function OrderSummary(){
     return (
         <div className='caixa-resumo_de_pedido'>
