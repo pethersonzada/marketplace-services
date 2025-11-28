@@ -1,6 +1,7 @@
 import PaymentsForm from "@/components/payments/PaymentsForm";
 import Footer from "@/components/ui/Footer";
 import OrderSummary from "@/components/payments/OrderSummary";
+
 import '@/styles/paymentsPage.css';
 
 export default function Payment() {
@@ -17,7 +18,6 @@ export default function Payment() {
         </div>
 
        </div>
-       
        
        <Footer />
     </main>
