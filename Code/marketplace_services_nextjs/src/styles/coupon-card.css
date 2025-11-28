@@ -1,12 +1,13 @@
 .coupon-items {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    gap: 40px;
 }
 
 .coupon-card {
     background-color: whitesmoke;
-    width: 380px;
+    width: 390px;
 }
 
 .coupon-title {
