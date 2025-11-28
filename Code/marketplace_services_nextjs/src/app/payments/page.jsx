@@ -1,6 +1,6 @@
-import PaymentsForm from "@/components/payments/paymentsForm";
+import PaymentsForm from "@/components/payments/PaymentsForm";
 import Footer from "@/components/ui/Footer";
-import OrderSummary from "@/components/payments/orderSummary";
+import OrderSummary from "@/components/payments/OrderSummary";
 import '@/styles/paymentsPage.css';
 
 export default function Payment() {
