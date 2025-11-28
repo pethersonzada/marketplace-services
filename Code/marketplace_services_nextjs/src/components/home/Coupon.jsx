@@ -1,4 +1,4 @@
-import "../../styles/coupon.css";
+import "../../styles/coupon-banner.css";
 
 export default function Coupon() {
     return <div className="coupon-card">

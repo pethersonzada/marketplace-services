@@ -1,0 +1,55 @@
+.coupon-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coupon-card {
+    background-color: whitesmoke;
+    width: 380px;
+}
+
+.coupon-title {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    font-family: "Poppins-Regular";
+}
+
+.coupon-title img {
+    width: 50px;
+}
+
+.coupon-main-text {
+    font-family: "Poppins-Regular";
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.coupon-main-content {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
+.coupon-main-content p {
+    font-size: 15px;
+    font-family: "Poppins-Light";
+}
+
+.coupon-footer {
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    background-color: #1F87E4;
+    color: white;
+    font-family: "Poppins-Light";
+    font-size: 15px;
+}
