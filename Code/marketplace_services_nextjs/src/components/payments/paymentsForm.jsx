@@ -1,5 +1,5 @@
 'use client';
-import '../../styles/paymentsForm.css';
+import '../../styles/PaymentsForm.css';
 import { useState } from 'react';
 import Link from 'next/link';
 export default function PaymentsForm(){
