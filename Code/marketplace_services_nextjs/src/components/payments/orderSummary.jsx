@@ -35,7 +35,6 @@ export default function OrderSummary(){
                 
                 </div>
 
-                {/*parte dos cupoms */}
                 <hr className='linha_divisoria'/>  
                 <div className='cupom'>
                     <input type="text" id='cupom' placeholder='Cupom de desconto' />
@@ -43,7 +42,6 @@ export default function OrderSummary(){
                 </div>
                 <hr className='linha_divisoria'/>
 
-                {/* subtotal e deslocamento */}
                 <div className='resumo'>
                     <div className='subtotal_valor'>
                         <h4 className='subtotal'>Subtotal</h4>
