@@ -1,6 +1,6 @@
 import '@/styles/orderSummary.css';
 import Image from 'next/image';
-export default function OrderSummary(){
+export default function orderSummary(){
     return (
         <div className='caixa-resumo_de_pedido'>
             <h2 className='titulo'>Resumo do pedido</h2>

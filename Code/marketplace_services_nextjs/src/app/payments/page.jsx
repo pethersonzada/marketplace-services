@@ -1,6 +1,6 @@
-import PaymentsForm from "@/components/payments/PaymentsForm";
+import paymentsForm from "@/components/payments/paymentsForm";
 import Footer from "@/components/ui/Footer";
-import OrderSummary from "@/components/payments/OrderSummary";
+import orderSummary from "@/components/payments/orderSummary";
 import '@/styles/paymentsPage.css';
 
 export default function Payment() {
@@ -9,11 +9,11 @@ export default function Payment() {
        <div className="left_right">
 
         <div className="left">
-            <PaymentsForm />
+            <paymentsForm />
         </div>
 
         <div className="right">
-            <OrderSummary/>
+            <orderSummary/>
         </div>
 
        </div>
