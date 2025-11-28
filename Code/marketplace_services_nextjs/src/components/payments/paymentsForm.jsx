@@ -2,7 +2,7 @@
 import '../../styles/paymentsForm.css';
 import { useState } from 'react';
 import Link from 'next/link';
-export default function paymentsForm(){
+export default function PaymentsForm(){
 
     const [metodo,setmetodo]=useState('cartao')
     const [SalvarDados, setSalvarDados]=useState(false)
