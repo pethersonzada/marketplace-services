@@ -11,9 +11,11 @@ export default function Payment() {
         <div className="left">
             <PaymentsForm />
         </div>
+
         <div className="right">
             <OrderSummary/>
         </div>
+
        </div>
        
        
