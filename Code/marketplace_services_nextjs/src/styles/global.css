@@ -30,6 +30,10 @@ html, body {
   height: 100%;
 }
 
+html, body a {
+  text-decoration: none;
+}
+
 .all-buttons {
   all: unset;
   align-items: center;
@@ -45,3 +49,20 @@ html, body {
   width: 80px;
   padding: 0 20px;
 }
+
+.all-buttons:hover {
+  all: unset;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #00315C ;
+  color: white;
+  font-family: "Poppins-Light";
+  height: 40px;
+  width: 80px;
+  padding: 0 20px;
+}
+

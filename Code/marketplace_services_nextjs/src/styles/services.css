@@ -20,6 +20,20 @@
   align-items: center;
 }
 
+.services-card:hover {
+  font-size: 23px;
+  font-family: "Poppins-Regular";
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  width: 450px;
+  background-color: #00315C;
+  justify-content: center;
+  align-items: center;
+}
+
 .services-card-content {
   display: flex;
   flex-direction: column;
@@ -37,6 +51,22 @@
   border-radius: 10px;
   font-size: 15px;
   background-color: #1F87E4 ;
+  color: white;
+  font-family: "Poppins-Light";
+  height: 40px;
+  width: 140px;
+}
+
+.options-button:hover {
+  all: unset;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+  border: solid white 2px;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #00315C ;
   color: white;
   font-family: "Poppins-Light";
   height: 40px;

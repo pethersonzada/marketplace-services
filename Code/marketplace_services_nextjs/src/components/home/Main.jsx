@@ -1,5 +1,4 @@
 import "../../styles/home.css";
-import Link from "next/link"
 
 export default function Main() {
     return <div className="main-content" >
@@ -20,11 +19,11 @@ export default function Main() {
                 placeholder="Qual o problema a ser resolvido?"
             />
 
-            <Link href="/login">
+            <a href="/login">
                 <button className="all-buttons">
                     Buscar
                 </button>
-            </Link>
+            </a>
 
         </div>
 

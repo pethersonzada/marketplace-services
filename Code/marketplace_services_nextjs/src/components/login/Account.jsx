@@ -1,5 +1,4 @@
 import "../../styles/account.css";
-import Link from "next/link";
 
 export default function Account() {
     return (
@@ -32,9 +31,9 @@ export default function Account() {
 
                     </div>
 
+                    <h4>Senha</h4>
                     <div className="password-login">
 
-                        <h4>Senha</h4>
                         <input
                             type="text"
                             className="main-input"
@@ -44,11 +43,11 @@ export default function Account() {
 
                         <div className="campos-login">
 
-                            <Link href="/home">
+                            <a href="/home">
                                 <button className="all-buttons">
                                     Entrar
                                 </button>
-                            </Link>
+                            </a>
                             <p className="login-create-account">Criar minha conta</p>
 
                         </div>

@@ -1,5 +1,4 @@
 import "../../styles/coupon-banner.css";
-import Link from "next/link"
 
 export default function Coupon() {
     return (
@@ -12,7 +11,11 @@ export default function Coupon() {
                 </div>
 
                 <div className="arrow-down">
+
+                        <a href="/coupon">
                         <img src="/icons/keyboard_arrow_down.png" alt="Arrow Down" />
+                        </a>
+
                 </div>
             </div>
         </div>

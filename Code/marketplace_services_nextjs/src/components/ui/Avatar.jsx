@@ -9,6 +9,7 @@ export default function Avatar() {
 
         <div className="profile-card-container">
 
+            <a href="/service-providers">
             <div className="profile-card">
 
                 <div className="profile-card-left-side">
@@ -36,8 +37,8 @@ export default function Avatar() {
                     </div>
 
                 </div>
-
             </div>
+            </a>
 
             <div className="profile-card">
 

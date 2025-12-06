@@ -1,10 +1,11 @@
-import Link from "next/link";
 import "../../styles/menu.css";
 
 export default function Title() {
   return (
     <nav className="menu">
+      <a href="/home">
       <img className="imagem-logo" src="/logo/logo-azul.png" alt="Logo" />
+      </a>
 
       <ul className="menu-list">
         <li>Quero Prestar Serviços</li>
@@ -14,13 +15,12 @@ export default function Title() {
       </ul>
 
       <div className="menu-actions">
-        <a className="create-account" href="#">criar conta</a>
 
-        <Link href="/login">
+        <a href="/login">
           <button className="all-buttons">
             Entrar
           </button>
-        </Link>
+        </a>
         
       </div>
     </nav>

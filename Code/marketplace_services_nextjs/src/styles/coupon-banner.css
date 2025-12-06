@@ -19,4 +19,16 @@
 
 .arrow-down {
   margin-top: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;  
+}
+
+.arrow-down a,
+.arrow-down img {
+  display: block;
+  height: 100%;
+  width: 100%;
 }

@@ -9,10 +9,12 @@ export default function Services() {
 
                 <p>Limpeza e Cuidados</p>
 
+                 {/*
                 <button className="options-button">
                     Ver Opções
                     <img className="arrow" src="/icons/keyboard_arrow_left.png" alt="Arrow Down" />
                 </button>
+                */}
 
             </div>
 
@@ -26,10 +28,12 @@ export default function Services() {
 
                 <p>Serviços de Casa</p>
 
+                 {/*
                 <button className="options-button">
                     Ver Opções
                     <img className="arrow" src="/icons/keyboard_arrow_left.png" alt="Arrow Down" />
                 </button>
+                */}
 
             </div>
 
@@ -43,11 +47,13 @@ export default function Services() {
 
                 <p>Assistência Técnica</p>
 
+                {/*
                 <button className="options-button">
                     Ver Opções
                     <img className="arrow" src="/icons/keyboard_arrow_left.png" alt="Arrow Down" />
                 </button>
-
+                */}
+                
             </div>
 
             <img className="services-card-img" src="/banner/laptop.png" alt="Cleaning Supplies" />
