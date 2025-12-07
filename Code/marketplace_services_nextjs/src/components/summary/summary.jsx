@@ -66,9 +66,11 @@ export default function Summary() {
                         placeholder='Digite o código do cupom' 
                         className='input_estilo_pagamento'
                     />
+
                     <button className='botao_aplicar'>
                         Aplicar
                     </button>
+                    
                 </div>
 
             </div>
