@@ -110,9 +110,9 @@ export default function PaymentsForm(){
 
                 <button className='botao_pagar'>Pagar</button>
 
-                <Link href="/" className='botao_cancelar'>
+                <a href="/home" className='botao_cancelar'>
                 Cancelar
-                </Link>
+                </a>
 
                     <p className='texto_privacidade'>Suas informações pessoais serão utilizadas para processar o seu pagamento e ajudar a nossa experiência usando nosso site, e para outros propósitos descritos na nossa política de privacidade.</p>
                 </div>
@@ -130,9 +130,9 @@ export default function PaymentsForm(){
 
                     <button className='botao_pagar'>Gerar boleto</button>
 
-                   <Link href="/" className='botao_cancelar'>
+                   <a href="/home" className='botao_cancelar'>
                      Cancelar
-                    </Link>
+                    </a>
 
                     <p className='texto_privacidade'>Suas informações pessoais serão utilizadas para processar o seu pagamento e ajudar a nossa experiência usando nosso site, e para outros propósitos descritos na nossa política de privacidade.</p>
                 </div>
@@ -148,7 +148,7 @@ export default function PaymentsForm(){
 
                     <button className='botao_pagar'>Gerar código pix</button>
 
-                    <Link href="/" className='botao_cancelar'>
+                    <a href="/home" className='botao_cancelar'>
                     Cancelar
                     </a>
 
