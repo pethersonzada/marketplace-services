@@ -249,3 +249,25 @@ input::placeholder{
     color: #34a0ff;
     font-size: 18px;
 }
+.parcelamento_container {
+    margin-top: 20px;
+    width: 100%;
+}
+.input_parcelas {
+    width: 30%;
+    padding: 8px;
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    border: 1px solid #b3b3b3;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.input_parcelas:focus {
+    border: 2px solid #000;
+    padding: 9px;
+}

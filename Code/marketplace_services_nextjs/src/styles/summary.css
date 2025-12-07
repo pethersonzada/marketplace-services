@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+.caixa_resumo {
+    font-family: 'Poppins', sans-serif;
+    max-width: 600px; 
+    width: 100%;
+    height: auto;
+    margin: 50px auto; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color:#f5f5f5;
+}
+.linha_divisoria {
+    border: none;
+    width: 100%;
+    border-top: 2px solid #e5e7eb;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.produto {
+    display: flex;
+    width: 95%;
+    align-items: center;
+    text-align: left;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+.foto {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+.detalhes {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.linha-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.nome_servico {
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+}
+.preco {
+    font-size: 18px;
+    font-weight: bold;
+}
+.descricao, .qtd {
+    font-size: 13px;
+    color: #909295;
+    margin: 0;
+    font-weight: 400;
+}
+.secao_valores {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.deslocamento, .taxa, .valor_d, .valor_t {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 500;
+    color: #555;
+}
+.total {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.total_valor {
+    font-size: 26px;
+    font-weight: 700;
+    color: #000;
+}
+.status_pagamento {
+    width: 100%;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.forma_de_pagamento {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.cartao_info_box {
+    background-color: #f5f5f5;
+    padding: 15px;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.linha-info-pagamento {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    padding-bottom: 5px;
+    width: 95%;
+}
+.label_pagamento {
+    color: #909295;
+    font-weight: 500;
+}
+
+.valor_pagamento {
+    font-weight: 600;
+    color: #333;
+}
+
+.texto_parcelas {
+    font-size: 14px;
+    color: #777;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.botao_pagar, .botao_cancelar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.botao_pagar {
+    background-color: #34a0ff;
+    font-weight: 600;
+}
+
+.botao_pagar:hover {
+    background-color: #2bbd07;
+}
+
+.botao_cancelar {
+    background-color: #fa1e1e;
+    margin-top: 10px;
+    width: 96%;
+}
+
+.botao_cancelar:hover {
+    background-color: #c51f1f;
+}
+.pix_aprovacao{ 
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 5px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 5px;
+}
+.texto_aviso_final {
+    margin-top: 16px;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.4;
+}
+.area_cupom {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.titulo_cupom {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin: 0 0 10px 0;
+    text-align: left;
+}
+
+.grupo_cupom {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+.input_estilo_pagamento {
+    flex: 1;
+    height: 14px;
+    padding: 10px;
+    font-weight: normal;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #b3b3b3;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    box-sizing: content-box;
+}
+.input_estilo_pagamento:focus {
+    outline: none;
+    border-width: 1px;
+    border-color: #909295;
+    padding: 10px;
+}
+.botao_aplicar {
+    background-color: #34a0ff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 0 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.botao_aplicar:hover {
+    background-color: #2d81ca;
+}

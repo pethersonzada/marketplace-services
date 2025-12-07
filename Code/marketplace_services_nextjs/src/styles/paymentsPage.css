@@ -1,16 +1,31 @@
 
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+
+.principal {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
 .left_right {
     display: flex;
-    justify-content:flex-start;
+    justify-content: space-between;
     align-items: flex-start;
-    min-height: 100vh;
+    gap: 30px;
+    width: 100%;
 }
-
-
 .left {
-    width:50%;
+    flex: 1;
 }
 
-.right{
-    width: 50%; 
+.right {
+    width: 360px;
+    margin-top: 30px;
+    flex-shrink: 0;
+    padding: 0; 
 }
