@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 .caixa-forma_de_pagamento{
     background-color: #f5f5f5;
     padding: 50px;
@@ -8,23 +9,33 @@
     box-sizing: border-box;
     height: auto;
     font-family: 'poppins',sans-serif; 
+    opacity: 0;
+    animation: fadeIn 0.8s forwards;
+    transition: all 0.3s ease;
 }
+
 .titulo{
     font-size: 24px;
     font-weight: bold;
-    
+    opacity: 0;
+    animation: fadeIn 0.8s forwards;
 }
+
 .linha-divisoria{
     border: none;
     border-top: 3px solid #e5e7eb;
     margin-top: 10px;
     margin-bottom: 20px;
+    transition: border-color 0.3s ease;
 }
+
 .subtitulo {
   font-size: 18px;
   font-weight: 600;
   color: #000000;
   margin-bottom: 10px;
+  opacity: 0;
+  animation: fadeIn 0.8s forwards;
 }
 
 .container-opcoes {
@@ -40,11 +51,18 @@
   cursor: pointer;     
   font-size: 14px;
   color: #000000;
+  transition: all 0.3s ease;
 }
+
+.opcao:hover {
+    background-color: rgba(52,160,255,0.05);
+}
+
 .dadosCartao{
     font-size: 20px;
     margin-bottom: 30px;
-    
+    opacity: 0;
+    animation: fadeIn 0.8s forwards;
 }
 
 #numeroDeCartao{
@@ -55,98 +73,96 @@
     font-size: 15px;
     border-radius: 5px;
     border: 1px solid #b3b3b3;
+    transition: all 0.3s ease;
 }
+
+#numeroDeCartao:hover {
+    box-shadow: 0 0 5px rgba(52,160,255,0.2);
+}
+
 .venci_cvv{
     display: flex;
     gap: 15px;
     margin-top: 15px;
     width: 100%;
-    
 }
+
 .grupo_venci_cvv{
     display: flex;
     flex-direction: column;
     width: 50%;
-
 }
+
 .subsubtitulo{
     font-size: 15px;
     font-weight: 600;
     color: #000000;
     margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeIn 0.8s forwards;
 }
+
+#validade, #cvv, #nomeTitular, #email, #cpf, #dataNascimento, .input_parcelas {
+    border-radius: 5px;
+    border: 1px solid #b3b3b3;
+    padding: 7px 10px;
+    font-weight: normal;
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+
+#validade:hover, #cvv:hover, #nomeTitular:hover, #email:hover, #cpf:hover, #dataNascimento:hover, .input_parcelas:hover {
+    box-shadow: 0 0 5px rgba(52,160,255,0.2);
+}
+
 #validade{
     width: 50%;
     height: 10px;
-    padding: 7px;
-    font-weight: normal;
-    font-size: 12px;
-    border-radius: 5px;
-    border: 1px solid #b3b3b3;
 }
+
 #cvv{
     width: 50%;
     height: 10px;
-    padding: 7px;
-    font-weight: normal;
-    font-size: 12px;
-    border-radius: 5px;
-    border: 1px solid #b3b3b3;
 }
+
 #nomeTitular{
     width: 100%;
     height: 15px;
-    padding: 10px;
-    font-weight: normal;
-    font-size: 15px;
-    border-radius: 5px;
-    border: 1px solid #b3b3b3;
 }
+
 #email{
     width: 100%;
     height: 15px;
-    padding: 10px;
-    font-weight: normal;
-    font-size: 15px;
-    border-radius: 5px;
-    border: 1px solid #b3b3b3;
-
 }
+
+#cpf{
+    width: 50%;
+    height: 10px;
+}
+
+#dataNascimento{
+    width: 50%;
+    height: 10px;
+    padding: 10;
+}
+
 .cpf_data{
     display: flex;
     gap: 15px;
     margin-top: 15px;
     width: 100%;
-    
 }
+
 .grupo_cpf_data{
     display: flex;
     flex-direction: column;
     width: 50%;
+}
 
-}
-#cpf{
-    width: 50%;
-    height: 10px;
-    padding: 10px;
-    font-weight: normal;
-    font-size: 12px;
-    border-radius: 5px;
-    border: 1px solid #b3b3b3;
-
-}
-#dataNascimento{
-    width: 50%;
-    height: 10px;
-    padding: 10;
-    font-weight: normal;
-    font-size: 12px;
-    border-radius: 5px;
-    border: 1px solid #b3b3b3;
-}
 .salvar_container{
     margin-top: 20px;
 }
+
 .checkbox_label{
     display: flex;
     align-items: center;
@@ -155,12 +171,14 @@
     font-size: 12px;
     width: fit-content;
 }
+
 .checkbox_label input[type="checkbox"] {
     margin: 0; 
     width: 12px;
     height: 12px;
     accent-color:#34a0ff;
 }
+
 .botao_pagar, 
 .botao_cancelar {
     display: flex;
@@ -179,31 +197,31 @@
     font-family: 'Poppins', sans-serif;
     color: white;
     text-decoration: none;
-    
-}
-
-.botao_pagar {
-    background-color: #34a0ff;
+    transition: all 0.3s ease;
 }
 
 .botao_pagar:hover {
     background-color: #2bbd07;
-}
-
-.botao_cancelar {
-    background-color: #fa1e1e;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .botao_cancelar:hover {
     background-color: #c51f1f;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
 .texto_privacidade{
     font-size: 12px;
     color:#b3b3b3;       
     margin-top: 20px;      
     line-height: 1.5;
     text-align: justify;
+    opacity: 0;
+    animation: fadeIn 0.8s forwards;
 }
+
 #numeroDeCartao:focus,
 #validade:focus,
 #cvv:focus,
@@ -213,46 +231,68 @@
     outline: none;
     border-width: 2px;
 }
+
 input::placeholder{
     color: #b3b3b3;
     opacity: 1;
 }
+
 .boleto{
     font-size: 20px;
     margin-bottom: 30px;
+    opacity: 0;
+    animation: fadeIn 0.8s forwards;
 }
+
 .lista_boleto{
     margin-top: 15px;
     padding-left: 20px; 
     text-align: left;
 }
+
 .lista_boleto li {
     font-size: 15px;
     margin-bottom: 10px;
     list-style-type: disc; 
+    transition: all 0.3s ease;
 }
+
+.lista_boleto li:hover {
+    transform: translateX(2px);
+}
+
 .lista_boleto li::marker {
     color: #34a0ff;
     font-size: 18px;
 }
+
 .lista_pix{
     margin-top: 15px;
     padding-left: 20px; 
     text-align: left;
 }
+
 .lista_pix li {
     font-size: 15px;
     margin-bottom: 10px;
     list-style-type: disc; 
+    transition: all 0.3s ease;
 }
+
+.lista_pix li:hover {
+    transform: translateX(2px);
+}
+
 .lista_pix li::marker {
     color: #34a0ff;
     font-size: 18px;
 }
+
 .parcelamento_container {
     margin-top: 20px;
     width: 100%;
 }
+
 .input_parcelas {
     width: 30%;
     padding: 8px;
@@ -266,8 +306,20 @@ input::placeholder{
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
+    transition: all 0.3s ease;
 }
+
+.input_parcelas:hover {
+    box-shadow: 0 0 5px rgba(52,160,255,0.2);
+}
+
 .input_parcelas:focus {
     border: 2px solid #000;
     padding: 9px;
+}
+
+/* Fade keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
