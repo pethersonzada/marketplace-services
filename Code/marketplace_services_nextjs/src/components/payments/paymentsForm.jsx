@@ -108,7 +108,9 @@ export default function PaymentsForm(){
                         </label>
                     </div>
 
+                <a href="/summary">
                 <button className='botao_pagar'>Pagar</button>
+                </a>
 
                 <a href="/home" className='botao_cancelar'>
                 Cancelar
@@ -127,8 +129,9 @@ export default function PaymentsForm(){
                         <li>Pode pagar em qualquer banco ou lotérica.</li>
                         <li>Não enviamos boleto pelo correio.</li>
                     </ul>
-
+                    <a href="/summary">
                     <button className='botao_pagar'>Gerar boleto</button>
+                    </a>
 
                    <a href="/home" className='botao_cancelar'>
                      Cancelar
@@ -146,7 +149,9 @@ export default function PaymentsForm(){
                     <li>O código Pix gerado tem validade de <strong>30 minutos</strong>.</li>
                     </ul>
 
+                    <a href="/summary">
                     <button className='botao_pagar'>Gerar código pix</button>
+                    </a>
 
                     <a href="/home" className='botao_cancelar'>
                     Cancelar
