@@ -58,7 +58,7 @@ export default function Enterprise() {
             </div>
 
             <button className="enterprise-btn">
-                <a href="/payments">Contratar Plano</a>
+                <a href="/login">Contratar Plano</a>
             </button>
         </div>
     );
