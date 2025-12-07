@@ -148,7 +148,6 @@ export default function PaymentsForm(){
                     <ul className="lista_pix"> 
                     <li>O pagamento é aprovado na hora.</li>
                     <li>O código Pix gerado tem validade de <strong>30 minutos</strong>.</li>
-                    <li>Você poderá copiar e colar o código ou escanear o QR Code na próxima tela.</li>
                     </ul>
 
                     <a href={`/summary?metodo=${metodo}`} className='botao_pagar'>

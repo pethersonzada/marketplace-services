@@ -1,9 +1,11 @@
 'use client';
+import { Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import '@/styles/summary.css';
 import Image from 'next/image';
 
-export default function Summary() {
+
+function SummaryContent() {
     const searchParams = useSearchParams();
     const metodo = searchParams.get('metodo');
     
@@ -161,5 +163,14 @@ export default function Summary() {
             <a href="/payments" className='botao_cancelar'>Voltar</a>
             
         </div>
+    );
+}
+
+export default function Summary() {
+    return (
+        
+        <Suspense fallback={<div className="carregando">Carregando resumo...</div>}>
+            <SummaryContent />
+        </Suspense>
     );
 }
