@@ -1,9 +1,15 @@
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(15px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
 .services {
   margin: 50px;
   gap: 50px;
   align-items: center;
   justify-content: center;
   display: flex;
+  animation: fadeIn 0.6s ease forwards;
 }
 
 .services-card {
@@ -18,20 +24,12 @@
   background-color: #1F87E4;
   justify-content: center;
   align-items: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .services-card:hover {
-  font-size: 23px;
-  font-family: "Poppins-Regular";
-  color: white;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: row;
-  height: 200px;
-  width: 450px;
   background-color: #00315C;
-  justify-content: center;
-  align-items: center;
+  transform: translateY(-5px);
 }
 
 .services-card-content {
@@ -50,27 +48,17 @@
   border: solid white 2px;
   border-radius: 10px;
   font-size: 15px;
-  background-color: #1F87E4 ;
+  background-color: #1F87E4;
   color: white;
   font-family: "Poppins-Light";
   height: 40px;
   width: 140px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .options-button:hover {
-  all: unset;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  cursor: pointer;
-  border: solid white 2px;
-  border-radius: 10px;
-  font-size: 15px;
-  background-color: #00315C ;
-  color: white;
-  font-family: "Poppins-Light";
-  height: 40px;
-  width: 140px;
+  background-color: #00315C;
+  transform: scale(1.05);
 }
 
 .arrow {

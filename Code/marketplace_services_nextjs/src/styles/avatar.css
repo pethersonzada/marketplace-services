@@ -17,7 +17,7 @@
 
 .profile-card {
   width: 400px;
-  height: 300px;
+  height: 330px;
   background-color: #1F87E4;
   border-radius: 30px;
   padding-left: 20px;
@@ -26,22 +26,16 @@
   gap: 30px;
   font-family: "Poppins-Regular";
   color: white;
+  transition: 0.3s ease;
+  transform: translateY(0);
 }
 
 .profile-card:hover {
-  width: 400px;
-  height: 300px;
   background-color: #00315C;
-  border-radius: 30px;
-  padding-left: 20px;
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  font-family: "Poppins-Regular";
-  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.18);
 }
 
-/* Lado Esquerdo */
 .profile-card-left-side {
   display: flex;
   flex-direction: column;
@@ -51,25 +45,34 @@
 
 .profile-card-left-side img {
   width: 150px;
+  transition: 0.3s ease;
+}
+
+.profile-card:hover .profile-card-left-side img {
+  transform: scale(1.05);
 }
 
 .profile-card-left-side-func {
   margin-top: -15px;
 }
 
-/* Lado Direito */
 .profile-card-right-side {
   display: flex;
   flex-direction: column;
 }
 
-/* Blocos de informação */
 .info-block {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  padding: 10px 0;
+  transition: 0.3s ease;
+}
+
+.profile-card:hover .info-block {
+  border-bottom-color: rgba(255, 255, 255, 0.6);
 }
 
 .info-block:last-child {
@@ -79,11 +82,21 @@
 .profile-card-number {
   margin-top: 1px;
   font-size: 30px;
+  transition: 0.2s ease;
+}
+
+.profile-card:hover .profile-card-number {
+  transform: scale(1.1);
 }
 
 .profile-card-number-39 {
   margin-top: 20px;
   font-size: 26px;
+  transition: 0.2s ease;
+}
+
+.profile-card:hover .profile-card-number-39 {
+  transform: scale(1.1);
 }
 
 .profile-card-label {
@@ -96,18 +109,16 @@
   align-items: center;
   justify-content: center;
   display: flex;
+  transition: 0.25s ease;
 }
 
 .see-more:hover {
-  font-family: "Poppins-Light";
-  align-items: center;
-  justify-content: center;
-  display: flex;
   color: #1F87E4;
+  transform: translateX(3px);
 }
 
 .see-more a {
   text-decoration: none;
   color: inherit;
-  cursor: pointer;  
+  cursor: pointer;
 }

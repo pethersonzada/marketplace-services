@@ -3,8 +3,6 @@
   display: flex;
 }
 
-/* ESQUERDA */
-
 .account-left-side {
   color: white;
   background-color: #1F87E4;
@@ -33,11 +31,9 @@
   font-size: 60px;
 }
 
-/* DIREITA */
-
 .account-right-side {
   width: 50%;
-  height: 97.5vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,6 +70,13 @@
   font-size: 14px;
   outline: none;
   margin-bottom: 20px;
+  transition: 0.25s ease;
+}
+
+.main-input:hover,
+.main-input:focus {
+  border-color: #00315C;
+  background-color: #f2f9ff;
 }
 
 .forgot-password {
@@ -82,6 +85,11 @@
   font-size: 12px;
   display: flex;
   justify-content: right;
+  transition: 0.25s ease;
+}
+
+.forgot-password:hover {
+  color: #1F87E4;
 }
 
 .campos-login {
@@ -94,6 +102,11 @@
 .login-create-account {
   font-family: "Poppins-Light";
   font-size: 12px;
+  transition: 0.25s ease;
+}
+
+.login-create-account:hover {
+  color: #1F87E4;
 }
 
 .login-alternative {
@@ -112,4 +125,9 @@
   font-family: "Poppins-Light";
   display: flex;
   justify-content: center;
+  transition: 0.25s ease;
+}
+
+.login-footer:hover {
+  color: #1F87E4;
 }

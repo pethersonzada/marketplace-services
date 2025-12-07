@@ -1,9 +1,15 @@
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(15px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
 .profile-container {
     width: 100%;
     max-width: 1100px;
     margin: 40px auto;
     padding: 20px;
     font-family: "Poppins-Regular";
+    animation: fadeIn 0.6s ease forwards;
 }
 
 .profile-header {
@@ -33,6 +39,10 @@
     height: 70px;
     border-radius: 50%;
     object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.profile-photo:hover {
+    transform: scale(1.05);
 }
 
 .profile-title {
@@ -53,6 +63,7 @@
     padding: 25px;
     border-radius: 14px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    animation: fadeIn 0.6s ease forwards;
 }
 
 .profile-section-title {
@@ -107,6 +118,11 @@
     background: #fafafa;
     border-radius: 12px;
     margin-bottom: 14px;
+    animation: fadeIn 0.6s ease forwards;
+    transition: background 0.3s ease;
+}
+.comment-box:hover {
+    background: #f5faff;
 }
 
 .comment-photo {
@@ -176,20 +192,9 @@
     height: 40px;
     width: 110px;
     padding: 0 20px;
+    transition: transform 0.2s ease;
 }
-
 .all-buttons:hover {
-    all: unset;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    cursor: pointer;
-    border-radius: 10px;
-    font-size: 15px;
     background-color: #00315C;
-    color: white;
-    font-family: "Poppins-Light";
-    height: 40px;
-    width: 110px;
-    padding: 0 20px;
+    transform: scale(1.05);
 }

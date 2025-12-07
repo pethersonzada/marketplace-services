@@ -3,14 +3,19 @@
   height: 80px;
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   gap: 20px;
   color: white;
   font-family: "Poppins-Regular";
-  width: 100%;   
-  max-width: 100vw;     
+  width: 100%;
+  max-width: 100vw;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+.coupon-card:hover {
+  background-color: #1a6db8;
+  transform: scale(1.02);
+}
 
 .banner-discount-content {
   display: flex;
@@ -23,7 +28,12 @@
   align-items: center;
   justify-content: center;
   height: 30px;
-  width: 30px;  
+  width: 30px;
+  transition: transform 0.3s ease;
+}
+
+.arrow-down:hover {
+  transform: scale(1.15);
 }
 
 .arrow-down a,

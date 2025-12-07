@@ -11,10 +11,12 @@
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+  transition: color 0.25s ease, filter 0.25s ease;
 }
 
 .footer a:hover {
   color: black;
+  filter: brightness(1.2);
 }
 
 .footer-redes-sociais {
@@ -28,6 +30,12 @@
   display: flex;
   gap: 20px;
   list-style: none;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.menu-list-footer li:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.2);
 }
 
 .footer-rights {

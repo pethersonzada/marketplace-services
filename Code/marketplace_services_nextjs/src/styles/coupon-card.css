@@ -9,18 +9,31 @@
     background-color: white;
     width: 390px;
     border-radius: 10px;
-    overflow: hidden; 
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, filter 0.3s ease;
 }
+
+.coupon-card:hover {
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    filter: brightness(1.03);
+}
+
 .coupon-title {
     justify-content: center;
     align-items: center;
     display: flex;
     gap: 20px;
     font-family: "Poppins-Regular";
+    transition: filter 0.3s ease;
 }
 
 .coupon-title img {
     width: 50px;
+    transition: filter 0.3s ease;
+}
+
+.coupon-card:hover .coupon-title img {
+    filter: brightness(1.2);
 }
 
 .coupon-main-text {
@@ -30,6 +43,7 @@
     display: flex;
     padding: 10px 15px;
     text-align: center;
+    transition: opacity 0.3s ease;
 }
 
 .coupon-main-content {
@@ -37,11 +51,17 @@
     align-items: center;
     display: flex;
     gap: 20px;
+    transition: filter 0.3s ease;
 }
 
 .coupon-main-content p {
     font-size: 15px;
     font-family: "Poppins-Light";
+    transition: color 0.3s ease;
+}
+
+.coupon-card:hover .coupon-main-content p {
+    color: #1F87E4;
 }
 
 .coupon-footer {
@@ -56,4 +76,10 @@
     color: white;
     font-family: "Poppins-Light";
     font-size: 15px;
+    transition: background-color 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.coupon-footer:hover {
+    background-color: #166bb4;
+    letter-spacing: 1px;
 }
