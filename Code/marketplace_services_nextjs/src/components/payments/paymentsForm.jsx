@@ -1,7 +1,6 @@
 'use client';
 import '../../styles/paymentsForm.css';
 import { useState } from 'react';
-import Link from 'next/link';
 
 export default function PaymentsForm(){
 
@@ -131,9 +130,9 @@ export default function PaymentsForm(){
 
                 <button className='botao_pagar'>Pagar</button>
 
-                <Link href="/" className='botao_cancelar'>
+                <a href="/" className='botao_cancelar'>
                 Cancelar
-                </Link>
+                </a>
 
                 <p className='texto_privacidade'>Suas informações pessoais serão utilizadas para processar o seu pagamento e ajudar a nossa experiência usando nosso site, e para outros propósitos descritos na nossa política de privacidade.</p>
 
@@ -159,9 +158,9 @@ export default function PaymentsForm(){
 
                     <button className='botao_pagar'>Gerar boleto</button>
 
-                   <Link href="/" className='botao_cancelar'>
+                   <a href="/" className='botao_cancelar'>
                      Cancelar
-                    </Link>
+                    </a>
 
                     <p className='texto_privacidade'>Suas informações pessoais serão utilizadas para processar o seu pagamento e ajudar a nossa experiência usando nosso site, e para outros propósitos descritos na nossa política de privacidade.</p>
 
@@ -181,9 +180,9 @@ export default function PaymentsForm(){
 
                     <button className='botao_pagar'>Gerar código pix</button>
 
-                    <Link href="/" className='botao_cancelar'>
+                    <a href="/" className='botao_cancelar'>
                     Cancelar
-                    </Link>
+                    </a>
 
                     <p className='texto_privacidade'>Suas informações pessoais serão utilizadas para processar o seu pagamento e ajudar a nossa experiência usando nosso site, e para outros propósitos descritos na nossa política de privacidade.</p>
                     

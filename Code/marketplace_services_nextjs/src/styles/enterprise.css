@@ -1,0 +1,95 @@
+.enterprise-container {
+    font-family: "Poppins-Regular";
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.enterprise-container a {
+    text-decoration: none;
+    all: unset;
+}
+
+.enterprise-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.enterprise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.enterprise-card {
+    background: #fff;
+    padding: 22px;
+    border-radius: 14px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.enterprise-card:hover {
+    border-color: #b8b8b8;
+}
+
+.enterprise-card.selected {
+    border-color: #1F87E4;
+    box-shadow: 0 0 10px rgba(31, 135, 228, 0.4);
+}
+
+.enterprise-card h3 {
+    font-size: 19px;
+    margin: 0 0 6px;
+}
+
+.enterprise-price {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 4px 0 10px;
+    color: #00315C;
+}
+
+.enterprise-desc {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.enterprise-benefits {
+    margin: 0;
+    padding: 0 0 0 18px;
+    list-style: disc;
+}
+
+.enterprise-benefits li {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.enterprise-btn {
+    margin-top: 25px;
+    padding: 12px 20px;
+    background: #1F87E4;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s ease;
+}
+
+.enterprise-btn:hover {
+    margin-top: 25px;
+    padding: 12px 20px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s ease;
+    background: #00315C;
+}

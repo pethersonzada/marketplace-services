@@ -3,14 +3,15 @@ import "../../styles/menu.css";
 export default function Title() {
   return (
     <nav className="menu">
+
       <a href="/home">
       <img className="imagem-logo" src="/logo/logo-azul.png" alt="Logo" />
       </a>
 
       <ul className="menu-list">
-        <li>Quero Prestar Serviços</li>
-        <li>Categoria de Serviços</li>
-        <li>Para Empresas/Manutenções</li>
+        <li><a href="/provide">Quero Prestar Serviços</a></li>
+        <li><a href="/category">Categoria de Serviços</a></li>
+        <li><a href="/enterprise">Para Empresas</a></li>
         <li>Ajuda</li>
       </ul>
 
