@@ -6,14 +6,12 @@
     font-family: "Poppins-Regular";
 }
 
-/* Title */
 .help-title {
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 25px;
 }
 
-/* Search box */
 .help-search-box {
     position: relative;
     max-width: 500px;
@@ -36,7 +34,6 @@
     opacity: 0.6;
 }
 
-/* Auth row */
 .help-auth-row {
     margin-top: 10px;
     padding-top: 20px;
@@ -57,7 +54,6 @@
     gap: 10px;
 }
 
-/* Buttons */
 .help-btn-primary {
     padding: 10px 22px;
     background: #1F87E4;
@@ -86,7 +82,6 @@
     background: #e8f3ff;
 }
 
-/* Products */
 .help-products-title {
     margin-top: 40px;
     font-size: 20px;

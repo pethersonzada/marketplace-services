@@ -26,7 +26,9 @@ export default function Help() {
                 <span className="help-auth-text">Entre para uma melhor experiência de Suporte</span>
 
                 <div className="help-auth-buttons">
-                    <button className="help-btn-primary">Entrar</button>
+                    <a href="/login">
+                    <button className="all-buttons">Entrar</button>
+                    </a>
                 </div>
                 
             </div>

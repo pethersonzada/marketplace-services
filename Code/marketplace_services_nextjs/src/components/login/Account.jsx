@@ -7,7 +7,9 @@ export default function Account() {
 
                 <div className="greeting-top">
                     <h1>Olá, </h1>
+                    <a href="/home">
                     <img className="login-logo" src="/logo/logo-branca.png" alt="Logo" />
+                    </a>
                 </div>
 
                 <h1>Bem Vindo!</h1>

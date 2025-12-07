@@ -12,6 +12,16 @@
   list-style: none;
 }
 
+.menu-list a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.menu-list a:hover {
+  color: #1F87E4;
+}
+
 .menu-actions {
   align-items: center;
   display: flex;
