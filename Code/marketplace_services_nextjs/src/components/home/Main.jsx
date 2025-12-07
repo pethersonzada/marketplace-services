@@ -19,7 +19,7 @@ export default function Main() {
                 placeholder="Qual o problema a ser resolvido?"
             />
 
-            <a href="/login">
+            <a href="/category">
                 <button className="all-buttons">
                     Buscar
                 </button>

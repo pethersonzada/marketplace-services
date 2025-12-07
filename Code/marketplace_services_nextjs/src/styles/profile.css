@@ -1,0 +1,200 @@
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(15px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.profile-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: "Poppins-Regular";
+    animation: fadeIn 0.6s ease forwards;
+}
+
+.profile-header {
+    background: #fff;
+    padding: 25px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.profile-header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.profile-photo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.profile-photo:hover {
+    transform: scale(1.05);
+}
+
+.profile-title {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.profile-subtitle {
+    margin: 0;
+    font-size: 14px;
+    color: #777;
+}
+
+.profile-card {
+    background: #fff;
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    animation: fadeIn 0.6s ease forwards;
+}
+
+.profile-section-title {
+    margin-bottom: 15px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.profile-row {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.profile-field {
+    flex: 1;
+}
+
+.profile-label {
+    display: block;
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 4px;
+}
+
+.profile-value {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.profile-email-box {
+    padding: 15px 18px;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.profile-date {
+    font-size: 12px;
+    color: #777;
+    display: block;
+    margin-top: 3px;
+}
+
+.comment-box {
+    display: flex;
+    gap: 15px;
+    padding: 18px;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    border-radius: 12px;
+    margin-bottom: 14px;
+    animation: fadeIn 0.6s ease forwards;
+    transition: background 0.3s ease;
+}
+.comment-box:hover {
+    background: #f5faff;
+}
+
+.comment-photo {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.comment-content {
+    flex: 1;
+}
+
+.comment-name {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.comment-text {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment-rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.stars {
+    font-size: 14px;
+    color: #f7b500;
+}
+
+.rating-number {
+    font-size: 13px;
+    color: #555;
+    font-weight: 600;
+}
+
+.profile-actions {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.all-buttons {
+    all: unset;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #1F87E4;
+    color: white;
+    font-family: "Poppins-Light";
+    height: 40px;
+    width: 110px;
+    padding: 0 20px;
+    transition: transform 0.2s ease;
+}
+.all-buttons:hover {
+    background-color: #00315C;
+    transform: scale(1.05);
+}

@@ -1,0 +1,102 @@
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(15px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.provide-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: "Poppins-Regular";
+    animation: fadeIn 0.6s ease forwards;
+}
+
+.provide-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.provide-subtitle {
+    font-size: 15px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.provide-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    animation: fadeIn 0.6s ease forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.provide-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.provide-field {
+    margin-bottom: 22px;
+}
+
+.provide-label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+.provide-input,
+.provide-select,
+.provide-textarea {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: "Poppins-Light";
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.provide-input:focus,
+.provide-select:focus,
+.provide-textarea:focus {
+    border-color: #1F87E4;
+    box-shadow: 0 0 5px rgba(31,135,228,0.3);
+    outline: none;
+}
+
+.provide-textarea {
+    min-height: 110px;
+    resize: none;
+}
+
+.provide-row {
+    display: flex;
+    gap: 35px;
+}
+
+.provide-field-half {
+    flex: 1;
+}
+
+.provide-submit {
+    margin-top: 10px;
+    width: 160px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.provide-submit:hover {
+    transform: scale(1.05);
+    background-color: #00315C;
+}
+
+.provide-link {
+    all: unset;
+    color: white;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+.provide-link:hover {
+    color: #1F87E4;
+}

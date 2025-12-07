@@ -4,12 +4,30 @@
   justify-content: space-between;
   padding: 15px;
   font-family: "Poppins-Light";
+  opacity: 0;
+  animation: fadeMenu .6s ease forwards;
 }
 
 .menu-list {
   display: flex;
   gap: 20px;
   list-style: none;
+}
+
+.menu-list a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: color .25s ease, transform .25s ease;
+}
+
+.menu-list a:hover {
+  color: #1F87E4;
+  transform: translateY(-2px);
+}
+
+.menu-list a:active {
+  transform: scale(.95);
 }
 
 .menu-actions {
@@ -21,8 +39,34 @@
 .create-account {
   text-decoration: none;
   color: #1F87E4;
+  transition: color .25s ease, transform .25s ease;
+}
+
+.create-account:hover {
+  transform: translateY(-2px);
+  color: #003f73;
+}
+
+.create-account:active {
+  transform: scale(.95);
 }
 
 .imagem-logo {
   height: 100px;
+  transition: transform .25s ease;
+}
+
+.imagem-logo:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fadeMenu {
+  0% {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

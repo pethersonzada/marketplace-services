@@ -1,0 +1,183 @@
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(15px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.help-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: "Poppins-Regular";
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.help-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.help-search-box {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto 30px;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+    animation-delay: 0.05s;
+}
+
+.help-search-box input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.help-search-box input:focus {
+    border-color: #1F87E4;
+    box-shadow: 0 0 5px rgba(31,135,228,0.3);
+    outline: none;
+}
+
+.help-search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.6;
+}
+
+.help-auth-row {
+    margin-top: 10px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+    animation-delay: 0.1s;
+}
+
+.help-auth-text {
+    font-size: 14px;
+    color: #555;
+}
+
+.help-auth-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.help-btn-primary,
+.help-btn-outline {
+    padding: 10px 22px;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.25s ease, transform 0.25s ease;
+    font-family: "Poppins-Regular";
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.help-btn-primary {
+    background: #1F87E4;
+    border: none;
+    color: #fff;
+    animation-delay: 0.15s;
+}
+
+.help-btn-primary:hover {
+    background: #003f73;
+    transform: translateY(-3px);
+}
+
+.help-btn-outline {
+    background: transparent;
+    border: 2px solid #1F87E4;
+    color: #1F87E4;
+    animation-delay: 0.2s;
+}
+
+.help-btn-outline:hover {
+    background: #e8f3ff;
+    transform: translateY(-3px);
+}
+
+.help-products-title {
+    margin-top: 40px;
+    font-size: 20px;
+    text-align: left;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+    animation-delay: 0.25s;
+}
+
+.help-products-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.help-product-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 25px 15px;
+    text-align: center;
+    transition: 0.2s ease, transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.help-products-grid .help-product-card:nth-child(1) { animation-delay: 0.3s; }
+.help-products-grid .help-product-card:nth-child(2) { animation-delay: 0.35s; }
+.help-products-grid .help-product-card:nth-child(3) { animation-delay: 0.4s; }
+.help-products-grid .help-product-card:nth-child(4) { animation-delay: 0.45s; }
+.help-products-grid .help-product-card:nth-child(5) { animation-delay: 0.5s; }
+
+.help-product-card:hover {
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    border-color: #ccc;
+    transform: translateY(-3px);
+}
+
+.help-product-icon {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.home-search-input {
+    width: 300px;
+    height: 40px; 
+    border-radius: 10px;
+    border: 3px solid #1F87E4; 
+    font-family: "Poppins-Light";
+    padding: 0 15px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-search-input:focus {
+    border-color: #003f73;
+    box-shadow: 0 0 5px rgba(31,135,228,0.3);
+}
+
+.input-area {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,3 +1,8 @@
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(15px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
 .coupon-items {
     display: flex;
     flex-wrap: wrap;
@@ -9,18 +14,47 @@
     background-color: white;
     width: 390px;
     border-radius: 10px;
-    overflow: hidden; 
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, filter 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    transform: translateY(15px);
+    animation: fadeInUp 0.6s ease forwards;
 }
+
+.coupon-items .coupon-card:nth-child(1) { animation-delay: 0.05s; }
+.coupon-items .coupon-card:nth-child(2) { animation-delay: 0.1s; }
+.coupon-items .coupon-card:nth-child(3) { animation-delay: 0.15s; }
+.coupon-items .coupon-card:nth-child(4) { animation-delay: 0.2s; }
+.coupon-items .coupon-card:nth-child(5) { animation-delay: 0.25s; }
+.coupon-items .coupon-card:nth-child(6) { animation-delay: 0.3s; }
+.coupon-items .coupon-card:nth-child(7) { animation-delay: 0.35s; }
+.coupon-items .coupon-card:nth-child(8) { animation-delay: 0.4s; }
+.coupon-items .coupon-card:nth-child(9) { animation-delay: 0.45s; }
+.coupon-items .coupon-card:nth-child(10) { animation-delay: 0.5s; }
+
+/* Hover Effects */
+.coupon-card:hover {
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    filter: brightness(1.03);
+    transform: translateY(-3px);
+}
+
 .coupon-title {
     justify-content: center;
     align-items: center;
     display: flex;
     gap: 20px;
     font-family: "Poppins-Regular";
+    transition: filter 0.3s ease;
 }
 
 .coupon-title img {
     width: 50px;
+    transition: filter 0.3s ease;
+}
+
+.coupon-card:hover .coupon-title img {
+    filter: brightness(1.2);
 }
 
 .coupon-main-text {
@@ -30,6 +64,7 @@
     display: flex;
     padding: 10px 15px;
     text-align: center;
+    transition: opacity 0.3s ease;
 }
 
 .coupon-main-content {
@@ -37,11 +72,17 @@
     align-items: center;
     display: flex;
     gap: 20px;
+    transition: filter 0.3s ease;
 }
 
 .coupon-main-content p {
     font-size: 15px;
     font-family: "Poppins-Light";
+    transition: color 0.3s ease;
+}
+
+.coupon-card:hover .coupon-main-content p {
+    color: #1F87E4;
 }
 
 .coupon-footer {
@@ -56,4 +97,10 @@
     color: white;
     font-family: "Poppins-Light";
     font-size: 15px;
+    transition: background-color 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.coupon-footer:hover {
+    background-color: #166bb4;
+    letter-spacing: 1px;
 }

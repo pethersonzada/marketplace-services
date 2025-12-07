@@ -9,7 +9,7 @@ export default function Avatar() {
 
         <div className="profile-card-container">
 
-            <a href="/service-providers">
+            <a href="/profile">
             <div className="profile-card">
 
                 <div className="profile-card-left-side">
@@ -40,6 +40,7 @@ export default function Avatar() {
             </div>
             </a>
 
+            <a href="/profile">
             <div className="profile-card">
 
                 <div className="profile-card-left-side">
@@ -69,7 +70,9 @@ export default function Avatar() {
                 </div>
 
             </div>
+            </a>
 
+            <a href="/profile">
             <div className="profile-card">
 
                 <div className="profile-card-left-side">
@@ -99,7 +102,14 @@ export default function Avatar() {
                 </div>
 
             </div>
+            </a>
 
+        </div>
+
+         <div className="see-more">
+            <a href="/service-providers">
+                <h3>Visualizar mais prestadores de serviço</h3>
+            </a>
         </div>
 
     </div>

@@ -1,0 +1,113 @@
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(15px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.enterprise-container {
+    font-family: "Poppins-Regular";
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.enterprise-container a {
+    text-decoration: none;
+    all: unset;
+}
+
+.enterprise-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.enterprise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.enterprise-card {
+    background: #fff;
+    padding: 22px;
+    border-radius: 14px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.enterprise-grid .enterprise-card:nth-child(1) { animation-delay: 0.05s; }
+.enterprise-grid .enterprise-card:nth-child(2) { animation-delay: 0.1s; }
+.enterprise-grid .enterprise-card:nth-child(3) { animation-delay: 0.15s; }
+.enterprise-grid .enterprise-card:nth-child(4) { animation-delay: 0.2s; }
+.enterprise-grid .enterprise-card:nth-child(5) { animation-delay: 0.25s; }
+.enterprise-grid .enterprise-card:nth-child(6) { animation-delay: 0.3s; }
+.enterprise-grid .enterprise-card:nth-child(7) { animation-delay: 0.35s; }
+.enterprise-grid .enterprise-card:nth-child(8) { animation-delay: 0.4s; }
+
+.enterprise-card:hover {
+    border-color: #b8b8b8;
+    transform: translateY(-5px);
+    filter: brightness(1.05);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.14);
+}
+
+.enterprise-card.selected {
+    border-color: #1F87E4;
+    box-shadow: 0 0 12px rgba(31, 135, 228, 0.4);
+}
+
+.enterprise-card h3 {
+    font-size: 19px;
+    margin: 0 0 6px;
+}
+
+.enterprise-price {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 4px 0 10px;
+    color: #00315C;
+}
+
+.enterprise-desc {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.enterprise-benefits {
+    margin: 0;
+    padding: 0 0 0 18px;
+    list-style: disc;
+}
+
+.enterprise-benefits li {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.enterprise-btn {
+    margin-top: 25px;
+    padding: 12px 20px;
+    background: #1F87E4;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Poppins-Light";
+    transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+    animation-delay: 0.45s;
+}
+
+.enterprise-btn:hover {
+    background: #00315C;
+    transform: translateY(-5px);
+    filter: brightness(1.05);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}

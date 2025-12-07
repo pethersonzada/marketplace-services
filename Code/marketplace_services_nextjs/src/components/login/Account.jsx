@@ -6,8 +6,7 @@ export default function Account() {
             <div className="account-left-side">
 
                 <div className="greeting-top">
-                    <h1>Olá, </h1>
-                    <img className="login-logo" src="/logo/logo-branca.png" alt="Logo" />
+                    <h1>Olá, Seja</h1>
                 </div>
 
                 <h1>Bem Vindo!</h1>

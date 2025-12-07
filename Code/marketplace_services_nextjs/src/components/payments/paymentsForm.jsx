@@ -108,13 +108,11 @@ export default function PaymentsForm(){
                         </label>
                     </div>
 
-                    <a href={`/summary?metodo=cartao&parcelas=${parcelas}`} className='botao_pagar'>
-                        Continuar
-                    </a>
-                    {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
-                    <a href="/" className='botao_cancelar'>
-                    Cancelar
-                    </a>
+                <button className='botao_pagar'>Pagar</button>
+
+                <Link href="/" className='botao_cancelar'>
+                Cancelar
+                </Link>
 
                     <p className='texto_privacidade'>Suas informações pessoais serão utilizadas para processar o seu pagamento e ajudar a nossa experiência usando nosso site, e para outros propósitos descritos na nossa política de privacidade.</p>
                 </div>
@@ -130,13 +128,11 @@ export default function PaymentsForm(){
                         <li>Não enviamos boleto pelo correio.</li>
                     </ul>
 
-                    <a href={`/summary?metodo=${metodo}`} className='botao_pagar'>
-                    Continuar
-                    </a>
-                    {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
-                    <a href="/" className='botao_cancelar'>
-                      Cancelar
-                    </a>
+                    <button className='botao_pagar'>Gerar boleto</button>
+
+                   <Link href="/" className='botao_cancelar'>
+                     Cancelar
+                    </Link>
 
                     <p className='texto_privacidade'>Suas informações pessoais serão utilizadas para processar o seu pagamento e ajudar a nossa experiência usando nosso site, e para outros propósitos descritos na nossa política de privacidade.</p>
                 </div>
@@ -150,11 +146,9 @@ export default function PaymentsForm(){
                     <li>O código Pix gerado tem validade de <strong>30 minutos</strong>.</li>
                     </ul>
 
-                    <a href={`/summary?metodo=${metodo}`} className='botao_pagar'>
-                    Continuar
-                    </a>
-                    {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
-                    <a href="/" className='botao_cancelar'>
+                    <button className='botao_pagar'>Gerar código pix</button>
+
+                    <Link href="/" className='botao_cancelar'>
                     Cancelar
                     </a>
 
