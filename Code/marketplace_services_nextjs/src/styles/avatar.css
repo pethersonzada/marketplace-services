@@ -90,3 +90,24 @@
   font-size: 16px;
   margin-top: -30px;
 }
+
+.see-more {
+  font-family: "Poppins-Light";
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.see-more:hover {
+  font-family: "Poppins-Light";
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: #1F87E4;
+}
+
+.see-more a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;  
+}
