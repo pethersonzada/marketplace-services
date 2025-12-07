@@ -12,7 +12,7 @@ export default function Title() {
         <li><a href="/provide">Quero Prestar Serviços</a></li>
         <li><a href="/category">Categoria de Serviços</a></li>
         <li><a href="/enterprise">Para Empresas</a></li>
-        <li>Ajuda</li>
+        <li><a href="/help">Ajuda</a></li>
       </ul>
 
       <div className="menu-actions">
