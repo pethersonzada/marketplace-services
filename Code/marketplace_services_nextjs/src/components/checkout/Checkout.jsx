@@ -81,7 +81,9 @@ export default function Checkout() {
           </div>
         )}
 
-        <button className="btn btn-pay">Pagar</button>
+        <a href="/payment">
+        <button className="btn btn-pay">Confirmar Pedido</button>
+        </a>
         <button className="btn btn-cancel">Cancelar</button>
       </div>
 
