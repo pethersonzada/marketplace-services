@@ -1,10 +1,23 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
+import confetti from "canvas-confetti";
 import "../../styles/checkout.css";
 
 export default function Checkout() {
   const [paymentMethod, setPaymentMethod] = useState("credit-card");
+  const router = useRouter();
+
+  const handleConfirm = () => {
+    confetti({
+      particleCount: 160,
+      spread: 90,
+      origin: { y: 0.6 }
+    });
+
+    router.push("/payment"); // redireciona na hora
+  };
 
   return (
     <div className="checkout-page">
@@ -71,7 +84,6 @@ export default function Checkout() {
         {paymentMethod === "boleto" && (
           <div className="payment-form fade-in">
             <p>Boleto gerado após a confirmação do pedido.</p>
-
           </div>
         )}
 
@@ -81,9 +93,10 @@ export default function Checkout() {
           </div>
         )}
 
-        <a href="/payment">
-        <button className="btn btn-pay">Confirmar Pedido</button>
-        </a>
+        <button className="btn btn-pay" onClick={handleConfirm}>
+          Confirmar Pedido
+        </button>
+
         <button className="btn btn-cancel">Cancelar</button>
       </div>
 
@@ -91,12 +104,12 @@ export default function Checkout() {
         <h2 className="summary-title">Resumo do pedido</h2>
         <div className="product-item">
           <span className="product-name">Serviço A</span>
-          <span className="product-price">R$ 100,00</span>
+          <span className="product-price">R$ 100,00</span>
         </div>
         <hr className="divider" />
         <div className="total-row">
           <span>Total</span>
-          <strong className="total-price">R$ 100,00</strong>
+          <strong className="total-price">R$ 100,00</strong>
         </div>
       </div>
     </div>
