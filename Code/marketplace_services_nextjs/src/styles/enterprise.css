@@ -111,3 +111,10 @@
     filter: brightness(1.05);
     box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
+
+.alinhamento {
+    margin-top: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

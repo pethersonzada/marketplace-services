@@ -42,9 +42,11 @@ export default function ProvidePage() {
                     </div>
                 </div>
 
+                <a href="/login" className="provide-link">
                 <button className="all-buttons">
-                    <a href="/login" className="provide-link">Publicar</a>
+                    Publicar
                 </button>
+                </a>
 
             </div>
 

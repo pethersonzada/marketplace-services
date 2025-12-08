@@ -45,28 +45,24 @@ a:hover {
 }
 
 .all-buttons {
-  all: unset;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  cursor: pointer;
-  border-radius: 10px;
-  font-size: 15px;
-  background-color: #1F87E4;
-  color: white;
-  font-family: "Poppins-Light";
-  
-  height: 40px;
-  width: 80px;
-  padding: 0 20px;
-
-  transition: background-color .25s ease, transform .2s ease;
+    all: unset;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #1F87E4;
+    color: white;
+    font-family: "Poppins-Light";
+    height: 40px;
+    width: 110px;
+    padding: 0 20px;
+    transition: transform 0.2s ease;
 }
-
 .all-buttons:hover {
-  background-color: #00315C;
-  transform: translateY(-2px);  
+    background-color: #0b7ee3;
+    transform: scale(1.05);
 }
 
 .all-buttons:active {

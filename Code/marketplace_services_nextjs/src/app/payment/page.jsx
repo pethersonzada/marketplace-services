@@ -1,16 +1,16 @@
 import Footer from "@/components/ui/Footer";
-import CheckoutCard from "@/components/checkout/CheckoutCard";
+import Payment from "@/components/payment/Payment";
 import Title from "@/components/ui/Title";
 
 export default function CheckoutPage() {
     return (
         <div>
 
-            <Title />
+        <Title />
 
-            <CheckoutCard />
+        <Payment />
 
-            <Footer />
+        <Footer />
 
         </div>
     );

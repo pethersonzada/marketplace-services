@@ -3,9 +3,9 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import confetti from "canvas-confetti";
-import "../../styles/checkout.css";
+import "../../styles/payment.css";
 
-export default function Checkout() {
+export default function payment() {
   const [paymentMethod, setPaymentMethod] = useState("credit-card");
   const router = useRouter();
 

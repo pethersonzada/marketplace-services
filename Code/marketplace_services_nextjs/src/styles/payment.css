@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  font-family: "Poppins-Regular";
+  background-color: #f5f5f5;
+}
+
+.checkout-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 30px;
+}
+
+.checkout-form-container,
+.order-summary-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  flex: 1 1 400px;
+  max-width: 500px;
+  transition: all 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+.order-summary-container {
+  max-width: 350px;
+}
+
+.checkout-title,
+.summary-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.checkout-divider {
+  border: none;
+  border-top: 2px solid #e0e0e0;
+  margin-bottom: 20px;
+}
+
+.payment-methods {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.option.active {
+  background-color: rgba(52, 160, 255, 0.2);
+}
+
+.option:hover {
+  background-color: rgba(52, 160, 255, 0.1);
+}
+
+.payment-form label {
+  display: block;
+  margin: 12px 0 4px;
+  font-size: 14px;
+}
+
+.payment-form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.payment-form input:focus {
+  outline: none;
+  border-color: #34a0ff;
+  box-shadow: 0 0 5px rgba(52, 160, 255, 0.3);
+}
+
+.row.two-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.row.two-inputs > div {
+  flex: 1;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.btn-pay {
+  background-color: #34a0ff;
+}
+
+.btn-pay:hover {
+  background-color: #2b8ddb;
+  transform: translateY(-2px);
+}
+
+.btn-cancel {
+  background-color: #fa1e1e;
+}
+
+.btn-cancel:hover {
+  background-color: #c52020;
+  transform: translateY(-2px);
+}
+
+.privacy-text {
+  font-size: 12px;
+  color: #777;
+  margin-top: 20px;
+  line-height: 1.4;
+  opacity: 0;
+  animation: fadeIn 1s forwards 0.4s;
+}
+
+.product-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 20px 0;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .checkout-page {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .checkout-form-container,
+  .order-summary-container {
+    max-width: 100%;
+  }
+}
