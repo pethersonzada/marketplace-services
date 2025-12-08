@@ -1,8 +1,8 @@
 "use client";
 
-import "../../styles/payment.css";
+import "../../styles/finished.css";
 
-export default function PaymentPage() {
+export default function FinishedCard() {
   return (
     <div className="checkout-page">
       <div className="checkout-form-container">

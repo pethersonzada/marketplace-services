@@ -1,14 +1,14 @@
 import Footer from "@/components/ui/Footer";
-import PaymentCard from "@/components/payment/PaymentCard";
+import FinishedCard from "@/components/finished/FinishedCard";
 import Title from "@/components/ui/Title";
 
-export default function PaymentPage() {
+export default function FinishedPage() {
     return (
         <div>
 
             <Title />
 
-            <PaymentCard />
+            <FinishedCard />
 
             <Footer />
 

@@ -16,7 +16,7 @@ export default function Checkout() {
       origin: { y: 0.6 }
     });
 
-    router.push("/payment"); // redireciona na hora
+    router.push("/finished"); 
   };
 
   return (
