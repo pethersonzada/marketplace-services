@@ -1,0 +1,87 @@
+.Classepai{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px;
+    
+}
+.Titulo{
+    color: #1E88E5;
+    font-family: "Poppins-regular";
+    text-align: center;
+    font-size: 30px;
+    border: 20px;
+    padding: 20px;
+}
+
+.subtitulo{
+    color: #1E88E5;
+    font-family: "Poppins-Bold";
+    text-align: center;
+    margin-top: -100px;
+}
+
+
+.comentarios{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    background-color: #1E88E5;
+    border-radius: 20px;
+    width:1490px;
+    height:250px;
+    margin-left: 20px;
+
+    }
+.card-comentario h2{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-align: start;
+    font-size: 30px;
+    font-family: "Poppins-Regular";
+    gap: 10px;
+    
+}
+.card-comentario p{
+    color: #fff;
+    text-align: start;
+    font-size: 17px;
+    font-family: "Poppins-Light";
+    margin-top: -30px;
+    margin-right: 10px;
+    max-width: 50%;
+}
+.avaliazaoFoto img{
+display:flex ;
+flex-direction: column-reverse;
+margin-top: 40px;
+margin: 20px;
+}
+.avaliazaoFoto p {
+    display: flex;
+    flex-direction:column ;
+    color: #fff;
+    font-size: 30px;
+    font-family: "Poppins-Regular";
+    margin-top: -20px;
+    margin-left: 40px;
+}
+
+
+
+.fotos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-left: 700px;
+    margin-right: 40px;
+    margin-top: -240px;
+}
+.fotos hr{
+    color: #fff;
+    width: 0;
+    height: 200px;
+}

@@ -1,0 +1,299 @@
+
+
+.classePAi {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    min-height: 500vh;
+    margin: 10px;
+    background-color: #1E88E5;
+    width: 450px;
+    
+}
+
+.Logo{
+    margin-top: -140px;
+    margin-left: 60px;
+}
+
+.serviços-title {
+    position: relative;
+    font-family: "Poppins-Regular";
+    color: #1E88E5;
+    text-align: center;
+    font-size: 27px;
+}
+
+
+
+.lista-serviços{
+    border: 10px;
+    background-color: #1E88E5;
+    margin: 20px;
+    border-radius: 20px;
+    height: 350px;
+    width: 500px;
+    margin-left: 80px;
+    margin-bottom: 200px;
+}
+
+.lista-serviços h2{
+    font-family:"Poppins-Regular" ;
+    font-size: 30px;
+    text-align: center;
+    color: #ffff;
+}
+    .lista-serviços li{
+        color: #ffff;
+        border: 15px;
+        font-size: 20px;
+        font-family: "Poppins-Light";
+        
+    }
+
+
+.sobreMin {
+    background-color: #1E88E5;
+    height: 400px;
+    width: 500px;
+    border-radius: 20px;
+    margin-left: 80px;
+    border: 10px;
+    display: block;
+
+}
+.sobreMin h2{
+    text-align: center;
+    font-family: "Poppins-Regular";
+    font-size: 30px;
+    color: #ffff;
+    margin-top: 20px;
+}
+.sobreMin p{
+    color: #ffff;
+    font-family: "Poppins-Light";
+    font-size: 20px;
+    margin: 20;
+}
+
+
+
+
+
+
+.profile-card{
+margin-top: 30px;
+font-family: "Poppins-Regular";
+align-items: center;
+justify-content: center;
+display: flex;
+}
+
+.profile-card-container {
+gap: 30px;
+padding: 20px;
+display: flex;
+
+}
+
+.profile-card {
+width: 480px;
+height: 300px;
+background-color: #1E88E5;
+border-radius: 20px;
+padding-left: 20px;
+display: flex;
+align-items: center;
+gap: 30px;
+font-family: "Poppins-Regular";
+color: white;
+margin-left: 80px;
+margin-bottom: 20px;
+border: 10px;
+display: flex;
+
+
+}
+
+/* Lado Esquerdo */
+.profile-card-left-side {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+.profile-card-left-side img {
+width: 150px;
+align-items: center;
+}
+
+.profile-card-left-side-func {
+margin-top: -15px;
+}
+
+/* Lado Direito */
+.profile-card-right-side {
+display: flex;
+flex-direction: column;
+}
+
+/* Blocos de informação */
+.info-block {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.info-block:last-child {
+border-bottom: none;
+align-items: center;
+}
+
+.profile-card-number {
+margin-top: 1px;
+font-size: 30px;
+align-items: center;
+}
+
+.profile-card-number-39 {
+margin-top: 20px;
+font-size: 26px;
+align-items: center;
+}
+
+.profile-card-label {
+font-size: 16px;
+margin-top: -30px;
+align-items: center;
+}
+
+
+.Comentarios{
+    background-color: #1E88E5;
+    width: 900;
+    height: 200px;
+    border-radius: 20px;
+    border: 20px;
+    margin: 20px;
+    margin-left: 80px;
+    float:inline-end;
+    margin-top: -320px;
+    position: relative;
+}
+.Comentarios img{
+    margin-right: 100px;
+    margin-left: 20px;
+    margin-top: -50px;
+    position: absolute;
+}
+.Comentarios h2{
+    color: #ffff;
+    font-size: 30px;
+    font-family: "Poppins-Regular";
+    text-align: center;
+    margin-right: 380px;
+}
+
+.Comentarios p{
+    color: #ffff;
+    
+    margin-left: 180px;
+    font-size: 19px;
+    font-family: "Poppins-Light";
+    position: relative;
+    top: -0px;
+}
+.Comentarios h3{
+    text-align: end;
+    color: #ffff;
+    font-family: "Poppins-Regular";
+    position: relative;
+    margin-right: 20px;
+    margin-top: -60px;
+    
+}
+
+.Imagens{
+    background-color: #1E88E5;
+    height: 300px;
+    width: 900px;
+    border-radius: 20px;
+    position: absolute;
+    margin-left: 600px;
+    margin-top: -100px;
+}
+.Imagens h2{
+    color: #ffff;
+    font-size: 30px;
+    font-family: "Poppins-Regular";
+    text-align: center;
+}
+.Imagens img {
+    height: 200px;
+    width: 200px;
+    margin-left: 20px;
+    margin-top: -20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.Agendar{
+    display: flex;
+    flex-direction: column;
+    background-color: #1E88E5;
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    color: #ffff;
+    margin-left:1000px;
+    margin-top: -560px;
+    
+}
+.Agendar  h2{
+    text-align: center;
+    font-family: "Poppins-Regular";
+    font-size: 40px;
+}
+.Agendar p{
+    text-align: center;
+    font-family: "Poppins-Light";
+    font-size: 20px;
+    margin-top: -40px;
+}
+.AgendarSegundaP h3{
+    text-align: center;
+    font-size: 25px;
+    font-family: "Poppins-Light";
+    
+}
+
+.AgendarSegundaP p{
+    text-align: center;
+    font-size: 50px;
+    font-family: "Poppins-Bold";
+    margin-top: -40px;
+}
+.AgendarSegundaP button{
+    color: #ffff;
+    background-color: #1E88E5;
+    border-bottom:black;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+    margin-top: -100px;
+    margin-left: 50px;
+    font-family: "Poppins-Regular";
+    
+}
+
+.maisInfo{
+    background-color: #1E88E5;
+    margin-right: 200px;
+}
