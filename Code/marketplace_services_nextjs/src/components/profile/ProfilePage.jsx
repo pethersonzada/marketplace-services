@@ -19,7 +19,11 @@ export default function ProfilePage() {
                 </div>
 
                 <div className="profile-header-buttons">
-                    <button className="all-buttons">Marcar</button>
+
+                    <a href="/checkout">
+                        <button className="all-buttons">Marcar</button>
+                    </a>
+                    
                     <button className="all-buttons">Contato</button>
                 </div>
             </div>

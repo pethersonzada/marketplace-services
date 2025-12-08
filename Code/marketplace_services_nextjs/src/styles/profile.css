@@ -177,24 +177,3 @@
     display: flex;
     gap: 15px;
 }
-
-.all-buttons {
-    all: unset;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    cursor: pointer;
-    border-radius: 10px;
-    font-size: 15px;
-    background-color: #1F87E4;
-    color: white;
-    font-family: "Poppins-Light";
-    height: 40px;
-    width: 110px;
-    padding: 0 20px;
-    transition: transform 0.2s ease;
-}
-.all-buttons:hover {
-    background-color: #00315C;
-    transform: scale(1.05);
-}
