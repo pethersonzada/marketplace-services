@@ -6,6 +6,7 @@
 .account-both-sides {
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .account-left-side {
@@ -17,6 +18,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .greeting-top {
@@ -34,6 +37,7 @@
 .account-left-side h1 {
     margin: 0;
     font-size: 60px;
+    text-align: center;
 }
 
 .account-right-side {
@@ -42,19 +46,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .login-content {
     margin-top: 30px;
     width: 80%;
+    max-width: 500px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-/* ========================================== */
-/* FADE EM CASCATA SOMENTE PARA OS FILHOS DA DIREITA */
-/* ========================================== */
 .account-right-side .login-content > * {
     opacity: 0;
     transform: translateY(15px);
@@ -67,9 +71,9 @@
 .account-right-side .login-content > *:nth-child(4) { animation-delay: 0.2s; }
 .account-right-side .login-content > *:nth-child(5) { animation-delay: 0.25s; }
 
-/* Inputs */
 .main-input {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     height: 40px;
     margin-top: 10px;
     padding: 0 15px;
@@ -89,7 +93,6 @@
     box-shadow: 0 0 5px rgba(31, 135, 228, 0.3);
 }
 
-/* Links e textos secundários */
 .forgot-password,
 .login-create-account,
 .login-footer {
@@ -102,7 +105,7 @@
     margin-top: -10px;
     font-size: 12px;
     display: flex;
-    justify-content: right;
+    justify-content: center;
 }
 
 .forgot-password:hover,
@@ -119,6 +122,7 @@
 }
 
 .login-create-account {
+    margin-bottom: -2px;
     font-size: 12px;
 }
 
@@ -136,4 +140,59 @@
     font-size: 13px;
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    .account-left-side, .account-right-side {
+        width: 100%;
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .account-left-side h1 {
+        font-size: 45px;
+    }
+
+    .main-input {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .account-left-side h1 {
+        font-size: 35px;
+    }
+
+    .login-content h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .login-content h4 {
+        font-size: 14px;
+    }
+
+    .login-alternative {
+        font-size: 14px;
+    }
+
+    .login-footer {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .account-left-side h1 {
+        font-size: 28px;
+    }
+
+    .login-content h1 {
+        font-size: 20px;
+    }
+
+    .main-input {
+        font-size: 13px;
+        height: 38px;
+        padding: 0 10px;
+    }
 }

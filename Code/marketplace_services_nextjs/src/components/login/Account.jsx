@@ -38,7 +38,6 @@ export default function Account() {
                             className="main-input"
                             placeholder="Digite a sua Senha"
                         />
-                        <p className="forgot-password">Esqueci a minha senha</p>
 
                         <div className="campos-login">
 
@@ -47,6 +46,7 @@ export default function Account() {
                                     Entrar
                                 </button>
                             </a>
+                            <p className="login-create-account">Esqueci minha senha</p>
                             <p className="login-create-account">Criar minha conta</p>
 
                         </div>
