@@ -12,7 +12,8 @@
 
 .coupon-card {
     background-color: white;
-    width: 390px;
+    width: 100%;
+    max-width: 390px;
     border-radius: 10px;
     overflow: hidden;
     transition: box-shadow 0.3s ease, filter 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
@@ -32,7 +33,6 @@
 .coupon-items .coupon-card:nth-child(9) { animation-delay: 0.45s; }
 .coupon-items .coupon-card:nth-child(10) { animation-delay: 0.5s; }
 
-/* Hover Effects */
 .coupon-card:hover {
     box-shadow: 0 8px 18px rgba(0,0,0,0.12);
     filter: brightness(1.03);
@@ -103,4 +103,41 @@
 .coupon-footer:hover {
     background-color: #166bb4;
     letter-spacing: 1px;
+}
+
+@media (max-width: 1024px) {
+    .coupon-items {
+        gap: 30px;
+    }
+    .coupon-main-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .coupon-items {
+        gap: 20px;
+    }
+    .coupon-card {
+        max-width: 320px;
+    }
+    .coupon-title {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .coupon-card {
+        max-width: 90%;
+    }
+    .coupon-main-text {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+    .coupon-footer {
+        font-size: 14px;
+        gap: 10px;
+    }
 }
