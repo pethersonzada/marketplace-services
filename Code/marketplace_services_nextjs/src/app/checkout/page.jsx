@@ -10,9 +10,10 @@ export default function CheckoutPage() {
 
             <CheckoutCard />
 
-            
-            <Footer />
-
+            <div className="margem">
+                <Footer />
+            </div>
+        
         </div>
     );
 }

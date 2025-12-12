@@ -68,3 +68,8 @@ a:hover {
 .all-buttons:active {
   transform: scale(0.97);
 }
+
+
+.margem {
+  margin-top: 300px;
+}
