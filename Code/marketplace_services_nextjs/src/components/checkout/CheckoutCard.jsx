@@ -27,10 +27,11 @@ export default function CheckoutCard() {
                     <a href="/payment">
                         <button className="all-buttons">Confirmar</button>
                     </a>
-                    
+
                 </div>
 
             </div>
+
         </div>
 
     );

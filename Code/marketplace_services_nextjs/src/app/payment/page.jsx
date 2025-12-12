@@ -10,8 +10,9 @@ export default function CheckoutPage() {
 
         <Payment />
 
+        
         <Footer />
-
+        
         </div>
     );
 }

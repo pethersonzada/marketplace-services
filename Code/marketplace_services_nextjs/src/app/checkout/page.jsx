@@ -10,6 +10,7 @@ export default function CheckoutPage() {
 
             <CheckoutCard />
 
+            
             <Footer />
 
         </div>
