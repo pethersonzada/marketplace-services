@@ -3,8 +3,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 250px;
+  padding: 20px;
   background-color: #1F87E4;
+  gap: 15px;
+  box-sizing: border-box;
 }
 
 .footer a {
@@ -20,7 +22,8 @@
 }
 
 .footer-redes-sociais {
-  width: 150px;
+  width: 120px;
+  max-width: 100%;
 }
 
 .menu-list-footer {
@@ -28,8 +31,12 @@
   font-size: 15px;
   color: white;
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  gap: 10px;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
   transition: transform 0.25s ease, filter 0.25s ease;
 }
 
@@ -39,7 +46,43 @@
 }
 
 .footer-rights {
-  font-size: 10px;
+  font-size: 12px;
   font-family: "Poppins-Light";
   color: white;
+  text-align: center;
+}
+
+.imagem-logo {
+  height: 60px;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding: 25px 40px;
+  }
+
+  .footer-redes-sociais {
+    width: 150px;
+  }
+
+  .menu-list-footer {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .footer-rights {
+    font-size: 12px;
+    text-align: right;
+  }
+
+  .imagem-logo {
+    height: 80px;
+  }
 }

@@ -16,28 +16,37 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   opacity: 0;
   transform: translateY(15px);
   animation: fadeInUp 0.6s ease forwards;
 }
 
+.how-it-works-container img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
 .profile-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .profile-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
   width: 400px;
   height: 330px;
   background-color: #1F87E4;
   border-radius: 30px;
-  padding-left: 20px;
-  display: flex;
-  align-items: center;
-  gap: 30px;
+  padding: 20px;
   font-family: "Poppins-Regular";
   color: white;
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
@@ -46,18 +55,9 @@
   animation: fadeInUp 0.6s ease forwards;
 }
 
-.profile-card:nth-child(1) {
-  animation-delay: 0.1s;
-}
-.profile-card:nth-child(2) {
-  animation-delay: 0.2s;
-}
-.profile-card:nth-child(3) {
-  animation-delay: 0.3s;
-}
-.profile-card:nth-child(4) {
-  animation-delay: 0.4s;
-}
+.profile-card:nth-child(1) { animation-delay: 0.1s; }
+.profile-card:nth-child(2) { animation-delay: 0.2s; }
+.profile-card:nth-child(3) { animation-delay: 0.3s; }
 
 .profile-card:hover {
   transform: translateY(-5px);
@@ -96,12 +96,9 @@
   justify-content: center;
   border-bottom: 2px solid rgba(255, 255, 255, 0.4);
   padding: 10px 0;
-  transition: border-bottom-color 0.3s ease;
 }
 
-.info-block:last-child {
-  border-bottom: none;
-}
+.info-block:last-child { border-bottom: none; }
 
 .profile-card-number {
   margin-top: 1px;
@@ -129,20 +126,47 @@
 }
 
 .see-more {
-  font-family: "Poppins-Light";
-  align-items: center;
-  justify-content: center;
   display: flex;
-  transition: color 0.25s ease, transform 0.25s ease;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  font-family: "Poppins-Light";
 }
 
-.see-more:hover {
-  color: #1F87E4;
-  transform: translateX(3px);
+.see-more a h3 {
+  text-align: center;
+  margin: 0;
 }
 
-.see-more a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
+@media (max-width: 1200px) {
+  .profile-card { width: 350px; height: 300px; gap: 20px; }
+  .profile-card-left-side img { width: 130px; }
+  .profile-card-number { font-size: 26px; }
+  .profile-card-number-39 { font-size: 22px; }
+}
+
+@media (max-width: 900px) {
+  .profile-card { 
+    width: 300px; 
+    height: auto; 
+    gap: 15px; 
+    flex-direction: column; 
+    text-align: center; 
+    padding: 15px; 
+  }
+  .profile-card-left-side img { width: 120px; margin-bottom: 10px; }
+  .profile-card-right-side { align-items: center; width: 100%; }
+  .profile-card-label { margin-top: 5px; }
+  .how-it-works-container img { max-width: 600px; }
+}
+
+@media (max-width: 600px) {
+  .profile-card-container { gap: 15px; padding: 10px; }
+  .profile-card { width: 100%; max-width: 280px; height: auto; padding: 15px; }
+  .profile-card-left-side img { width: 100px; }
+  .profile-card-number { font-size: 22px; }
+  .profile-card-number-39 { font-size: 20px; }
+  .profile-card-label { font-size: 14px; margin-top: 5px; }
+  .profile-card-left-side-func { margin-top: 0; }
+  .how-it-works-container img { max-width: 100%; padding: 0 10px; }
 }

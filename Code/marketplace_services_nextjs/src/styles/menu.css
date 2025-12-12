@@ -1,24 +1,30 @@
 .menu {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   padding: 15px;
   font-family: "Poppins-Light";
   opacity: 0;
-  animation: fadeMenu .6s ease forwards;
+  animation: fadeMenu 0.6s ease forwards;
+  gap: 15px;
 }
 
 .menu-list {
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  gap: 10px;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  align-items: center;
 }
 
 .menu-list a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
-  transition: color .25s ease, transform .25s ease;
+  transition: color 0.25s ease, transform 0.25s ease;
 }
 
 .menu-list a:hover {
@@ -27,33 +33,19 @@
 }
 
 .menu-list a:active {
-  transform: scale(.95);
+  transform: scale(0.95);
 }
 
 .menu-actions {
-  align-items: center;
   display: flex;
   gap: 15px;
-}
-
-.create-account {
-  text-decoration: none;
-  color: #1F87E4;
-  transition: color .25s ease, transform .25s ease;
-}
-
-.create-account:hover {
-  transform: translateY(-2px);
-  color: #003f73;
-}
-
-.create-account:active {
-  transform: scale(.95);
+  justify-content: center;
+  width: 100%;
 }
 
 .imagem-logo {
-  height: 100px;
-  transition: transform .25s ease;
+  height: 80px;
+  transition: transform 0.25s ease;
 }
 
 .imagem-logo:hover {
@@ -68,5 +60,30 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .menu {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
+
+  .menu-list {
+    flex-direction: row;
+    gap: 20px;
+    width: auto;
+  }
+
+  .menu-actions {
+    justify-content: flex-end;
+    width: auto;
+  }
+
+  .imagem-logo {
+    height: 100px;
   }
 }
