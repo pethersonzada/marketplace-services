@@ -8,6 +8,7 @@
     padding: 20px;
     max-width: 900px;
     margin: auto;
+    box-sizing: border-box;
 }
 
 .enterprise-container a {
@@ -19,6 +20,7 @@
     font-size: 24px;
     margin-bottom: 20px;
     font-weight: 600;
+    text-align: center;
 }
 
 .enterprise-grid {
@@ -114,7 +116,29 @@
 
 .alinhamento {
     margin-top: 20px;
-    align-items: center;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .enterprise-title { font-size: 22px; }
+    .enterprise-card { padding: 20px; }
+    .enterprise-card h3 { font-size: 18px; }
+    .enterprise-price { font-size: 16px; }
+    .enterprise-desc, .enterprise-benefits li { font-size: 13px; }
+}
+
+@media (max-width: 768px) {
+    .enterprise-grid { grid-template-columns: 1fr; gap: 15px; }
+    .enterprise-card { padding: 18px; }
+    .enterprise-btn { width: 100%; text-align: center; }
+}
+
+@media (max-width: 480px) {
+    .enterprise-title { font-size: 20px; }
+    .enterprise-card h3 { font-size: 17px; }
+    .enterprise-price { font-size: 15px; }
+    .enterprise-desc, .enterprise-benefits li { font-size: 12px; }
+    .enterprise-card { padding: 16px; }
 }

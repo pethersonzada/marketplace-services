@@ -9,18 +9,21 @@
     margin: 40px auto;
     padding: 20px;
     font-family: "Poppins-Regular";
+    box-sizing: border-box;
 }
 
 .category-title {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 4px;
+    text-align: center;
 }
 
 .category-subtitle {
     font-size: 15px;
     color: #777;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 .category-grid {
@@ -75,4 +78,28 @@
 
 .category-card:hover .category-name {
     color: #1F87E4;
+}
+
+@media (max-width: 1024px) {
+    .category-title { font-size: 24px; }
+    .category-subtitle { font-size: 14px; }
+    .category-grid { gap: 18px; }
+}
+
+@media (max-width: 768px) {
+    .category-title { font-size: 22px; }
+    .category-subtitle { font-size: 13px; }
+    .category-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 15px; }
+    .category-card { padding: 20px 15px; }
+    .category-icon { font-size: 34px; margin-bottom: 8px; }
+    .category-name { font-size: 15px; }
+}
+
+@media (max-width: 480px) {
+    .category-title { font-size: 20px; }
+    .category-subtitle { font-size: 12px; }
+    .category-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; }
+    .category-card { padding: 18px 12px; }
+    .category-icon { font-size: 30px; margin-bottom: 6px; }
+    .category-name { font-size: 14px; }
 }

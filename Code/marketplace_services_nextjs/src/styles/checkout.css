@@ -16,6 +16,7 @@
     transition: transform 0.2s ease;
     opacity: 0;
     animation: fadeIn 0.4s ease forwards;
+    box-sizing: border-box;
 }
 
 .checkout-card:hover {
@@ -27,6 +28,7 @@
     font-weight: 600;
     text-align: center;
     color: #333;
+    word-break: break-word;
 }
 
 .checkout-items {
@@ -38,6 +40,7 @@
 .checkout-item {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 1rem;
     color: #555;
     padding-bottom: 5px;
@@ -87,4 +90,68 @@
     align-items: center;
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    .checkout-card {
+        max-width: 420px;
+        padding: 25px 20px;
+    }
+    .checkout-card-title {
+        font-size: 1.6rem;
+    }
+    .checkout-total {
+        font-size: 1.15rem;
+    }
+    .checkout-item {
+        font-size: 0.95rem;
+    }
+    .checkout-button {
+        font-size: 0.95rem;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .checkout-card {
+        max-width: 360px;
+        padding: 22px 18px;
+    }
+    .checkout-card-title {
+        font-size: 1.5rem;
+    }
+    .checkout-total {
+        font-size: 1.1rem;
+    }
+    .checkout-item {
+        font-size: 0.9rem;
+    }
+    .checkout-button {
+        font-size: 0.9rem;
+        padding: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .checkout-card {
+        max-width: 95%;
+        padding: 18px 15px;
+    }
+    .checkout-card-title {
+        font-size: 1.3rem;
+    }
+    .checkout-total {
+        font-size: 1rem;
+    }
+    .checkout-item {
+        font-size: 0.85rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        text-align: left;
+    }
+    .checkout-button {
+        font-size: 0.85rem;
+        padding: 10px;
+    }
 }
