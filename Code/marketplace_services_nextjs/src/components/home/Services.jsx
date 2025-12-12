@@ -1,65 +1,36 @@
 import "../../styles/services.css";
 
 export default function Services() {
-    return <div className="services">
+    return (
+        <div className="services">
 
-        <div className="services-card">
+            <a href="/cleaning-and-care" className="services-card-link">
+                <div className="services-card">
+                    <div className="services-card-content">
+                        <p>Limpeza e Cuidados</p>
+                    </div>
+                    <img className="services-card-img" src="/banner/cleaning-supplies.png" alt="Cleaning Supplies" />
+                </div>
+            </a>
 
-            <div className="services-card-content">
+            <a href="/home-and-maintenance" className="services-card-link">
+                <div className="services-card">
+                    <div className="services-card-content">
+                        <p>Serviços de Casa</p>
+                    </div>
+                    <img className="services-card-img" src="/banner/toolbox.png" alt="Serviços de Casa" />
+                </div>
+            </a>
 
-                <p>Limpeza e Cuidados</p>
-
-                 {/*
-                <button className="options-button">
-                    Ver Opções
-                    <img className="arrow" src="/icons/keyboard_arrow_left.png" alt="Arrow Down" />
-                </button>
-                */}
-
-            </div>
-
-            <img className="services-card-img" src="/banner/cleaning-supplies.png" alt="Cleaning Supplies" />
-
-        </div>
-
-        <div className="services-card">
-
-            <div className="services-card-content">
-
-                <p>Serviços de Casa</p>
-
-                 {/*
-                <button className="options-button">
-                    Ver Opções
-                    <img className="arrow" src="/icons/keyboard_arrow_left.png" alt="Arrow Down" />
-                </button>
-                */}
-
-            </div>
-
-            <img className="services-card-img" src="/banner/toolbox.png" alt="Cleaning Supplies" />
+            <a href="/technical-assistance" className="services-card-link">
+                <div className="services-card">
+                    <div className="services-card-content">
+                        <p>Assistência Técnica</p>
+                    </div>
+                    <img className="services-card-img" src="/banner/laptop.png" alt="Assistência Técnica" />
+                </div>
+            </a>
 
         </div>
-
-        <div className="services-card">
-
-            <div className="services-card-content">
-
-                <p>Assistência Técnica</p>
-
-                {/*
-                <button className="options-button">
-                    Ver Opções
-                    <img className="arrow" src="/icons/keyboard_arrow_left.png" alt="Arrow Down" />
-                </button>
-                */}
-                
-            </div>
-
-            <img className="services-card-img" src="/banner/laptop.png" alt="Cleaning Supplies" />
-
-        </div>
-
-
-    </div>;
+    );
 }
