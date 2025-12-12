@@ -10,6 +10,7 @@
     padding: 20px;
     font-family: "Poppins-Regular";
     animation: fadeIn 0.6s ease forwards;
+    box-sizing: border-box;
 }
 
 .profile-header {
@@ -21,17 +22,22 @@
     justify-content: space-between;
     gap: 20px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .profile-header-left {
     display: flex;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .profile-header-buttons {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .profile-photo {
@@ -40,6 +46,7 @@
     border-radius: 50%;
     object-fit: cover;
     transition: transform 0.3s ease;
+    flex-shrink: 0;
 }
 .profile-photo:hover {
     transform: scale(1.05);
@@ -49,12 +56,14 @@
     margin: 0;
     font-size: 22px;
     font-weight: bold;
+    word-break: break-word;
 }
 
 .profile-subtitle {
     margin: 0;
     font-size: 14px;
     color: #777;
+    word-break: break-word;
 }
 
 .profile-card {
@@ -64,6 +73,8 @@
     border-radius: 14px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     animation: fadeIn 0.6s ease forwards;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .profile-section-title {
@@ -76,10 +87,12 @@
     display: flex;
     gap: 25px;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .profile-field {
-    flex: 1;
+    flex: 1 1 200px;
+    min-width: 150px;
 }
 
 .profile-label {
@@ -93,6 +106,7 @@
     font-size: 16px;
     font-weight: 600;
     margin: 0;
+    word-break: break-word;
 }
 
 .profile-email-box {
@@ -101,6 +115,8 @@
     background: #fafafa;
     border-radius: 12px;
     margin-bottom: 12px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .profile-date {
@@ -120,6 +136,9 @@
     margin-bottom: 14px;
     animation: fadeIn 0.6s ease forwards;
     transition: background 0.3s ease;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
 }
 .comment-box:hover {
     background: #f5faff;
@@ -130,10 +149,12 @@
     height: 55px;
     border-radius: 50%;
     object-fit: cover;
+    flex-shrink: 0;
 }
 
 .comment-content {
-    flex: 1;
+    flex: 1 1 200px;
+    min-width: 150px;
 }
 
 .comment-name {
@@ -147,12 +168,14 @@
     font-size: 14px;
     color: #555;
     line-height: 1.4;
+    word-break: break-word;
 }
 
 .comment-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .comment-rating {
@@ -176,4 +199,24 @@
     margin-top: 25px;
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+    .profile-title { font-size: 20px; }
+    .profile-subtitle { font-size: 13px; }
+    .profile-section-title { font-size: 16px; }
+    .profile-value { font-size: 15px; }
+    .comment-name { font-size: 14px; }
+    .comment-text { font-size: 13px; }
+    .stars { font-size: 13px; }
+    .rating-number { font-size: 12px; }
+}
+
+@media (max-width: 768px) {
+    .profile-header { flex-direction: column; align-items: flex-start; gap: 10px; }
+    .profile-row { flex-direction: column; gap: 5px; }
+    .profile-actions { flex-direction: column; gap: 5px; }
+    .profile-field { flex: 1 1 100%; min-width: 100%; }
+    .comment-content { flex: 1 1 100%; min-width: 100%; }
 }
